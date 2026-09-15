@@ -868,14 +868,19 @@ footer.end a{color:var(--blue)}
   </ul></div>
 
   <h3>7.1 De borden</h3>
-  <div data-signs="D1a,D1b,D1c,D1e,D3,D5,D7,D9,D10,D11,D13"></div>
+  <div data-signs="D1a,D1b,D1c,D1d,D1e,D1f,D3,D5,D7,D9,D10,D11,D13"></div>
 
   <h3>7.2 De pijlborden</h3>
+  <p>De D1-reeks lijkt een hoop pijlen die op elkaar lijken, maar ze valt uiteen in drie groepen die iets heel verschillends van je vragen. Aan de <strong>vorm van de pijl</strong> zie je meteen tot welke groep een bord hoort.</p>
   <ul>
-    <li><strong>D1a, D1b, D1c:</strong> je <strong>moet</strong> de richting van de pijl volgen. Dit is geen advies en je gps telt niet mee.</li>
-    <li><strong>D1e:</strong> staat bij een obstakel, een vluchtheuvel of een verkeersgeleider. Je moet er langs de aangeduide kant voorbij.</li>
+    <li><strong>D1a en D1b</strong> leggen een <strong>richting</strong> op. De pijl is recht: rechtdoor bij D1a, of meteen naar links of rechts bij D1b. Je volgt die richting, ook als je gps iets anders zegt.</li>
+    <li><strong>D1c en D1d</strong> zeggen dat je links of rechts moet <strong>aanhouden</strong>. De pijl staat schuin. Je slaat dus niet af, je wijkt uit: langs de kant waar de pijl naartoe wijst.</li>
+    <li><strong>D1e en D1f</strong> leggen op dat je op het kruispunt links- of rechts<strong>af slaat</strong>. De pijl heeft een knik.</li>
     <li><strong>D3:</strong> twee toegelaten richtingen, bijvoorbeeld rechtdoor of rechts. Alles wat er niet op staat, mag niet.</li>
   </ul>
+  <div class="note key"><div class="t">Aanhouden is niet afslaan</div>
+    <p>Dit is het onderscheid waar kandidaten over vallen. Een <strong>schuine</strong> pijl (D1c, D1d) betekent <strong>aanhouden</strong>: je blijft in dezelfde straat rijden en gaat langs de aangeduide kant van een vluchtheuvel, een verkeersgeleider of een obstakel. Een pijl met een <strong>knik</strong> (D1e, D1f) betekent <strong>afslaan</strong>: je verlaat de straat waarin je rijdt. Kijk dus naar de pijl, niet naar de kant waar hij naartoe wijst.</p>
+  </div>
   <div class="note tip"><div class="t">Verwar D1 niet met F19 of F13</div>
     <p><strong>D1</strong> is rond en blauw en <em>verplicht</em> een richting. <strong>F19</strong> is vierkant en blauw en <em>informeert</em> dat je in een eenrichtingsstraat rijdt. <strong>F13</strong> is vierkant en toont welke rijstrook welke richting volgt.</p>
   </div>
@@ -898,6 +903,7 @@ footer.end a{color:var(--blue)}
   <ul>
     <li>Rond + blauw = <b>gebod</b>. De pijl is bindend.</li>
     <li><b>D7</b> betekent voor jou: fietspad = verboden te rijden, stil te staan en te parkeren.</li>
+    <li>Schuine pijl (<b>D1c/D1d</b>) = <b>aanhouden</b>. Pijl met een knik (<b>D1e/D1f</b>) = <b>afslaan</b>.</li>
     <li><b>D9</b> = gescheiden pad, <b>D10</b> = gedeeld pad.</li>
     <li><b>D5</b> regelt de rijrichting op de rotonde, <b>niet</b> de voorrang.</li>
   </ul></div>
@@ -3383,10 +3389,18 @@ footer.end a{color:var(--blue)}
   def('C47', 'Tolpost', 'circR', function (c) { return txt('TOL', c, 20, 57); }, 'Verbod door te rijden zonder te stoppen.');
 
   /* === D - GEBODSBORDEN === */
-  def('D1a', 'Verplichte rijrichting: rechtdoor', 'circB', function (c) { return arrowUp(c); }, 'Je moet de richting van de pijl volgen.');
-  def('D1b', 'Verplichte rijrichting: rechts', 'circB', function (c) { return arrowTurn(c, 'R'); }, 'Verplicht rechts afslaan.');
-  def('D1c', 'Verplichte rijrichting: links', 'circB', function (c) { return arrowTurn(c, 'L'); }, 'Verplicht links afslaan.');
-  def('D1e', 'Hindernis rechts voorbijrijden', 'circB', function (c) { return '<path fill="' + c + '" d="M26 80 q0-30 26-30 h12 V36 l22 14-22 14V56 h-10 q-14 0-14 24z"/>'; }, 'Je moet het obstakel langs de aangegeven kant voorbijrijden.');
+  def('D1a', 'Verplicht rechtdoor', 'circB', function (c) { return arrowUp(c); }, 'Je moet de richting van de pijl volgen.');
+  def('D1b', 'Verplicht rechts', 'circB', function (c) {
+    return '<path fill="' + c + '" d="M14 40 h40 V20 l32 30-32 30V60 H14 z"/>';
+  }, 'Je moet meteen de aangeduide richting volgen. Er bestaat ook een variant naar links.');
+  def('D1c', 'Verplicht links aanhouden', 'circB', function (c) {
+    return '<g transform="rotate(-45 50 50)">' + arrowUp(c) + '</g>';
+  }, 'Langs de linkerkant van het obstakel of de verkeersgeleider rijden.');
+  def('D1d', 'Verplicht rechts aanhouden', 'circB', function (c) {
+    return '<g transform="rotate(45 50 50)">' + arrowUp(c) + '</g>';
+  }, 'Langs de rechterkant van het obstakel of de verkeersgeleider rijden.');
+  def('D1e', 'Verplicht linksaf', 'circB', function (c) { return arrowTurn(c, 'L'); }, 'Op het kruispunt verplicht links afslaan.');
+  def('D1f', 'Verplicht rechtsaf', 'circB', function (c) { return arrowTurn(c, 'R'); }, 'Op het kruispunt verplicht rechts afslaan.');
   def('D3', 'Rechtdoor of rechts', 'circB', function (c) {
     return '<path fill="' + c + '" d="M38 84 V38 h-9 l15-18 15 18h-9v46z"/><path fill="' + c + '" d="M53 62 h14 V52 l16 13-16 13V68 h-14z"/>';
   }, 'Alleen deze twee richtingen zijn toegelaten.');
@@ -4180,7 +4194,8 @@ window.QUIZDATA = Object.assign(window.QUIZDATA || {}, {
     { q: 'Wat is het verschil tussen D9 en D10?', sign: 'D9,D10', o: ['D9 splitst het pad in een deel voor fietsers en een deel voor voetgangers; bij D10 delen ze dezelfde ruimte', 'D9 is enkel voor fietsers', 'D10 is enkel voor voetgangers', 'Er is geen verschil'], a: 0, fb: 'De verticale streep op D9 toont de opsplitsing.' },
     { q: 'Welke kleur en vorm heeft een gebodsbord?', o: ['Rond en blauw', 'Rond met rode rand', 'Driehoekig met rode rand', 'Vierkant en wit'], a: 0, fb: 'Rond blauw verplicht, rond met rode rand verbiedt.' },
     { q: 'Wat regelt bord D5 op een rotonde?', sign: 'D5', o: ['Enkel de rijrichting rond het middeneiland, niet de voorrang', 'De voorrang voor wie op de rotonde rijdt', 'De maximumsnelheid', 'Dat je moet stoppen voor je oprijdt'], a: 0, fb: 'De voorrang komt van het bord B1 dat er in Belgi&#235; bijna altijd naast staat.' },
-    { q: 'Waarvoor staat bord D1e met de schuine pijl?', sign: 'D1e', o: ['Je moet een obstakel of verkeersgeleider langs de aangeduide kant voorbijrijden', 'Je moet afslaan', 'Je moet van rijstrook veranderen', 'Je moet uitwijken naar de berm'], a: 0, fb: 'Het staat bij vluchtheuvels, geleiders en obstakels.' },
+    { q: 'Waarvoor staat dit bord met de schuine pijl?', sign: 'D1d', o: ['Je moet rechts aanhouden en het obstakel langs die kant voorbijrijden', 'Je moet rechts afslaan', 'Je moet van rijstrook veranderen', 'Je moet uitwijken naar de berm'], a: 0, fb: 'Een schuine pijl betekent aanhouden. Het bord staat bij vluchtheuvels, verkeersgeleiders en obstakels.' },
+    { q: 'Wat is het verschil tussen een schuine pijl en een pijl met een knik op een blauw rond bord?', o: ['Schuin betekent aanhouden, een knik betekent afslaan', 'Schuin betekent afslaan, een knik betekent aanhouden', 'Er is geen verschil', 'Schuin geldt enkel voor fietsers'], a: 0, fb: 'D1c en D1d laten je aanhouden; D1e en D1f laten je afslaan.' },
     { q: 'Wat betekent bord D11?', sign: 'D11', o: ['Verplichte weg voor voetgangers, dus verboden voor jou', 'Voetgangers mogen hier niet', 'Oversteekplaats voor voetgangers', 'Voetgangerszone'], a: 0, fb: 'Wat voor voetgangers verplicht is, is voor voertuigen verboden.' },
     { q: 'Je ziet bord D3 met een pijl rechtdoor en een pijl rechts. Mag je links afslaan?', sign: 'D3', o: ['Nee, enkel de richtingen op het bord zijn toegelaten', 'Ja, als er geen tegenliggers zijn', 'Ja, met je knipperlicht aan', 'Enkel als je gps het aangeeft'], a: 0, fb: 'Alles wat niet op het bord staat, is verboden.' }
   ],
@@ -4603,7 +4618,9 @@ window.QEXTRA = [
   /* ---- les 07 ---- */
   { l: 'm07', q: 'Wat betekent dit bord?', sign: 'D9', o: ['Gescheiden pad: fietsers aan de ene kant, voetgangers aan de andere', 'Gedeeld pad voor fietsers en voetgangers', 'Verboden voor fietsers en voetgangers', 'Oversteekplaats'], a: 0, fb: 'De verticale streep toont de opsplitsing.' },
   { l: 'm07', q: 'Mag je met de auto op een verplicht fietspad rijden om een file te omzeilen?', sign: 'D7', o: ['Nee, in geen enkel geval', 'Ja, als er geen fietsers zijn', 'Ja, stapvoets', 'Enkel buiten de spitsuren'], a: 0, heavy: true, fb: 'Je mag het enkel dwars kruisen om een zijweg of eigendom te bereiken.' },
-  { l: 'm07', q: 'Welke richtingen laat bord D1c toe?', sign: 'D1c', o: ['Enkel links', 'Enkel rechts', 'Rechtdoor en links', 'Alle richtingen'], a: 0, fb: 'Alles wat niet op het bord staat, is verboden.' },
+  { l: 'm07', q: 'Wat betekent dit bord?', sign: 'D1c', o: ['Links aanhouden: langs de linkerkant van het obstakel rijden', 'Links afslaan op het kruispunt', 'Verplicht rechtdoor', 'Verboden links af te slaan'], a: 0, fb: 'De schuine pijl betekent aanhouden, niet afslaan. Voor links afslaan is er bord D1e.' },
+  { l: 'm07', q: 'Wat betekent dit bord?', sign: 'D1e', o: ['Verplicht linksaf op het kruispunt', 'Links aanhouden langs een obstakel', 'Verboden links af te slaan', 'Verplicht rechtdoor'], a: 0, fb: 'De knik in de pijl betekent afslaan. Voor links aanhouden is er bord D1c.' },
+  { l: 'm07', q: 'Je ziet bord D1d op een vluchtheuvel. Wat doe je?', sign: 'D1d', o: ['Je rijdt langs de rechterkant van de vluchtheuvel verder in dezelfde straat', 'Je slaat rechts af', 'Je keert om', 'Je stopt en verleent voorrang'], a: 0, fb: 'Aanhouden betekent uitwijken, niet afslaan.' },
 
   /* ---- les 08 ---- */
   { l: 'm08', q: 'Je laadt meubels uit onder een bord E1. Is dat toegelaten?', sign: 'E1', o: ['Ja, laden en lossen is stilstaan en dat mag bij E1', 'Nee, alles is verboden', 'Enkel korter dan vijf minuten', 'Enkel met je knipperlichten aan'], a: 0, fb: 'Bij bord E3 zou zelfs dat verboden zijn.' },
