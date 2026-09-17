@@ -806,9 +806,9 @@ footer.end a{color:var(--blue)}
     <thead><tr><th>Bord</th><th>Wat wordt gemeten</th><th>Valstrik</th></tr></thead>
     <tbody>
       <tr><td>C21</td><td>De <strong>werkelijke massa</strong> van je voertuig op dat ogenblik</td><td>Niet de maximaal toegelaten massa uit je inschrijvingsbewijs, maar het gewicht met lading en inzittenden erbij</td></tr>
-      <tr><td>C25</td><td>De totale <strong>breedte</strong>, lading inbegrepen</td><td>Een uitstekende spiegel of een brede lading telt mee</td></tr>
-      <tr><td>C27</td><td>De totale <strong>hoogte</strong>, lading inbegrepen</td><td>Een dakkoffer of fietsendrager op het dak kan je over de grens tillen</td></tr>
-      <tr><td>C29</td><td>De totale <strong>lengte</strong> van voertuig en aanhangwagen samen</td><td>Bij een gespan tel je alles op</td></tr>
+      <tr><td>C25</td><td>De totale <strong>lengte</strong> van voertuig en aanhangwagen samen</td><td>Bij een gespan tel je alles op, ook de dissel</td></tr>
+      <tr><td>C27</td><td>De totale <strong>breedte</strong>, lading inbegrepen</td><td>Een uitstekende spiegel of een brede lading telt mee</td></tr>
+      <tr><td>C29</td><td>De totale <strong>hoogte</strong>, lading inbegrepen</td><td>Een dakkoffer of fietsendrager op het dak kan je over de grens tillen</td></tr>
     </tbody>
   </table></div>
 
@@ -944,8 +944,8 @@ footer.end a{color:var(--blue)}
   <div data-signs="E9a,E9d,E9b,E9c,E9h,E9i,E9e,E9f,E9g"></div>
   <ul>
     <li><strong>E9a</strong> geeft aan dat parkeren er toegelaten is; het onderbord vertelt onder welke voorwaarden.</li>
-    <li><strong>E9b, E9c, E9d en E9h</strong> reserveren de plaats voor autocars, vrachtwagens, personenauto&#8217;s of motorfietsen.</li>
-    <li><strong>E9i</strong> reserveert de plaats voor <strong>personen met een handicap</strong>. Zonder geldige parkeerkaart achter je voorruit is dat een overtreding van de derde graad, ook als je er maar &#8220;even&#8221; staat.</li>
+    <li><strong>E9b, E9c, E9d, E9h en E9i</strong> reserveren de plaats voor een soort voertuig: E9b personenauto&#8217;s, E9c vrachtwagens, E9d autocars, E9h kampeerauto&#8217;s en E9i motorfietsen. Kijk naar het voertuig dat op het bord staat.</li>
+    <li>Een plaats voor <strong>personen met een handicap</strong> is bord <strong>E9a</strong> met het <strong>rolstoelsymbool</strong> erop of eronder. Zonder geldige parkeerkaart achter je voorruit is daar staan een overtreding van de derde graad, ook als je er maar &#8220;even&#8221; staat.</li>
     <li><strong>E9e</strong> verplicht je <strong>volledig</strong> op de berm of het trottoir te staan, <strong>E9f</strong> <strong>gedeeltelijk</strong> (twee wielen erop, twee op de rijbaan) en <strong>E9g</strong> volledig <strong>op de rijbaan</strong>. Zonder een van deze borden mag je binnen de bebouwde kom niet op het trottoir staan.</li>
   </ul>
 
@@ -4179,21 +4179,21 @@ window.QUIZDATA = Object.assign(window.QUIZDATA || {}, {
     { q: 'Een verkeerslicht is volledig gedoofd. Wat doe je?', o: ['Je valt terug op de borden, en zijn die er niet, op de voorrang van rechts', 'Je rijdt door alsof het groen is', 'Je stopt en wacht tot het licht herstelt', 'Je hebt altijd voorrang'], a: 0, fb: 'Een defect licht geeft je geen extra rechten.' }
   ],
   m04: [
-    { q: 'Welk bord is dit?', sign: 'A15', o: ['Slipgevaar', 'Werken', 'Kiezelprojectie', 'Ezelsrug'], a: 0, fb: 'De auto met slipsporen waarschuwt voor een glibberige rijbaan.' },
+    { q: 'Het regent voor het eerst na een droge week. Je rijdt op een weg met dit bord. Waarom is dat het gevaarlijkste moment?', sign: 'A15', o: ['Olie en stof vormen met het eerste water een gladde laag', 'De banden zijn dan koud', 'Het water blijft langer op de weg liggen', 'De remmen worden nat en werken niet meer'], a: 0, heavy: true, fb: 'Een korte bui na droogte maakt het wegdek glibberiger dan een hele dag regen, die de vuillaag wegspoelt.' },
     { q: 'Op welke afstand van het gevaar staat een gevaarsbord buiten de bebouwde kom?', o: ['Ongeveer 150 meter', 'Ongeveer 50 meter', 'Ongeveer 25 meter', 'Vlak bij het gevaar'], a: 0, fb: 'Binnen de bebouwde kom staat het rond 25 meter. Een onderbord kan een andere afstand geven.' },
-    { q: 'Wat betekent dit bord?', sign: 'A51', o: ['Gevaar dat niet door een symbool wordt weergegeven; het onderbord legt uit welk', 'Einde van alle verbodsbepalingen', 'Verplicht stoppen', 'Voorrang verlenen'], a: 0, fb: 'De driehoek met het uitroepteken werkt altijd samen met een onderbord.' },
+    { q: 'Onder dit bord hangt een onderbord met de melding modder op de rijbaan, na landbouwwerken. Wat doe je?', sign: 'A51', o: ['Snelheid minderen en bruuske stuur- of rembewegingen vermijden', 'Doorrijden, modder is geen echt gevaar', 'Toeteren om de landbouwer te waarschuwen', 'Uitwijken naar de berm'], a: 0, heavy: true, fb: 'Natte modder is even glad als ijzel. Bord A51 werkt altijd samen met het onderbord dat zegt waarover het gaat.' },
     { q: 'Je ziet dit bord. Wat verandert er aan de regels?', sign: 'A23', o: ['Niets aan de regels, maar je moet extra voorzichtig zijn; meestal geldt er zone 30', 'Je moet altijd stoppen', 'Je hebt voorrang op kinderen', 'De maximumsnelheid wordt automatisch 20 km/u'], a: 0, fb: 'Een gevaarsbord waarschuwt alleen. De snelheidsbeperking komt van het zonebord ernaast.' },
     { q: 'Welk bord waarschuwt voor een overweg met slagbomen?', sign: 'A41', o: ['Dit bord', 'Enkel het Andreaskruis', 'Het bord met de locomotief', 'Er bestaat geen apart bord'], a: 0, fb: 'A43 met de locomotief waarschuwt voor een overweg zonder slagbomen.' },
     { q: 'Wat betekent een Andreaskruis met twee balken?', sign: 'A47', o: ['Overweg met twee of meer sporen', 'Overweg met een spoor', 'Tramkruising', 'Kruispunt met voorrang van rechts'], a: 0, fb: 'Een balk betekent een spoor; na de eerste trein kan er een tweede komen.' },
     { q: 'Je nadert een overweg zonder slagbomen en er staat file aan de overkant. Wat doe je?', o: ['Je wacht voor de overweg tot je zeker weet dat je er volledig over raakt', 'Je rijdt op tot tegen de auto voor je', 'Je steekt snel over en wacht op de sporen', 'Je rijdt door want er komt geen trein'], a: 0, heavy: true, fb: 'Nooit een overweg oprijden als je er niet in een keer af raakt.' },
-    { q: 'Wat betekent dit bord?', sign: 'A3', o: ['Gevaarlijke daling van minstens 7 procent', 'Steile helling naar boven', 'Ezelsrug', 'Rijbaanversmalling'], a: 0, fb: 'Schakel terug en laat de motor afremmen, anders raken je remmen oververhit.' },
+    { q: 'Onderaan de daling bij dit bord ligt een kruispunt. Waarom begin je bovenaan al te vertragen?', sign: 'A3', o: ['Bergaf is je remweg veel langer dan op een vlakke weg', 'Omdat het bord een maximumsnelheid oplegt', 'Omdat je motor anders afslaat', 'Omdat je anders niet kunt terugschakelen'], a: 0, heavy: true, fb: 'Het gewicht van je auto duwt mee naar beneden. Wie pas onderaan remt, komt te ver door.' },
     { q: 'Je passeert bord A14 (verhoogde inrichting). Wat doe je?', sign: 'A14', o: ['Traag over de drempel rijden, meestal geldt er 30 km/u', 'Versnellen zodat je er vlot overheen gaat', 'Op de drempel remmen', 'Uitwijken naar de berm'], a: 0, fb: 'Remmen op de drempel belast je vering onnodig en maakt de auto onrustig.' },
     { q: 'Wat waarschuwt bord A37?', sign: 'A37', o: ['Zijwind', 'Vallende stenen', 'Laagvliegende vliegtuigen', 'Beweegbare brug'], a: 0, fb: 'Hou je stuur met beide handen vast, vooral bij het verlaten van een tunnel of brug.' }
   ],
   m05: [
     { q: 'Wat is het verschil tussen B1 en B5?', sign: 'B1,B5', o: ['Bij B1 moet je voorrang verlenen maar niet stoppen; bij B5 moet je altijd volledig stilstaan', 'Er is geen verschil', 'B1 geldt enkel voor auto&#8217;s', 'Bij B5 mag je doorrijden als er niemand komt'], a: 0, heavy: true, fb: 'Bij een stopbord moeten je wielen volledig stilstaan, ook op een lege weg.' },
-    { q: 'Wat betekent dit bord?', sign: 'B9', o: ['Voorrangsweg: je hebt voorrang op alle zijwegen', 'Einde voorrangsweg', 'Voorrang verlenen', 'Kruispunt met voorrang van rechts'], a: 0, fb: 'De gele ruit geldt tot aan bord B11.' },
-    { q: 'Wat betekent dit bord?', sign: 'B11', o: ['Einde voorrangsweg: vanaf hier geldt opnieuw de voorrang van rechts', 'Begin voorrangsweg', 'Voorrang verlenen aan tegenliggers', 'Einde van alle verboden'], a: 0, heavy: true, fb: 'Veel bestuurders blijven na dit bord ten onrechte in voorrangsmodus.' },
+    { q: 'Je rijdt op een weg met dit bord en nadert een zebrapad waar iemand wil oversteken. Geeft je voorrangsweg je het recht om door te rijden?', sign: 'B9', o: ['Nee, een voorrangsweg geeft geen voorrang op voetgangers op een zebrapad', 'Ja, op een voorrangsweg heb je altijd voorrang', 'Ja, tenzij de voetganger al op de rijbaan staat', 'Ja, binnen de bebouwde kom'], a: 0, heavy: true, fb: 'De ruit regelt de voorrang tegenover kruisende bestuurders, niet tegenover voetgangers op een oversteekplaats.' },
+    { q: 'Na dit bord blijft de weg even breed en even druk. Wat verandert er dan wel?', sign: 'B11', o: ['Alleen je voorrang: vanaf hier geldt weer de voorrang van rechts', 'De maximumsnelheid', 'Het wegtype', 'Niets, het bord is louter informatief'], a: 0, heavy: true, fb: 'Een weg ziet er na dit bord precies hetzelfde uit. Net daarom rijden mensen door alsof ze nog voorrang hebben.' },
     { q: 'Waarvoor dient bord B3?', sign: 'B3', o: ['Het kondigt op afstand een bord B1 aan', 'Het verplicht je te stoppen', 'Het geeft je voorrang', 'Het duidt een kruispunt met lichten aan'], a: 0, fb: 'B3 en B7 zijn aankondigingsborden; ze verplichten je zelf tot niets.' },
     { q: 'Je nadert een versmalling met dit bord. Wat doe je?', sign: 'B19', o: ['Je wacht en laat de tegenliggers eerst door', 'Je rijdt eerst, de tegenliggers wachten', 'Je claxonneert en rijdt door', 'Je stopt volledig en wacht op een teken'], a: 0, fb: 'De rode pijl is de jouwe: jij moet wachten. Bij B21 is het omgekeerd.' },
     { q: 'Wat laat bord B22 toe?', sign: 'B22', o: ['Fietsers mogen rechtsaf bij rood of oranje, na voorrang te verlenen', 'Fietsers mogen rechtdoor bij rood', 'Fietsers moeten rechtsaf slaan', 'Auto&#8217;s mogen rechtsaf bij rood'], a: 0, fb: 'B23 laat fietsers rechtdoor bij rood. Beide keren met voorrang aan iedereen.' },
@@ -4203,16 +4203,16 @@ window.QUIZDATA = Object.assign(window.QUIZDATA || {}, {
     { q: 'Op een voorrangsweg kruist een tram je weg. Wie gaat eerst?', o: ['De tram', 'Jij, want je rijdt op een voorrangsweg', 'Wie het eerst op het kruispunt is', 'De tram enkel als hij van rechts komt'], a: 0, heavy: true, fb: 'Spoorvoertuigen hebben altijd voorrang, ook op een voorrangsweg.' }
   ],
   m06: [
-    { q: 'Wat betekent dit bord?', sign: 'C1', o: ['Verboden richting: jij mag deze straat niet inrijden', 'Verboden toegang in beide richtingen', 'Eenrichtingsverkeer, jij mag er wel in', 'Doodlopende straat'], a: 0, fb: 'C1 staat aan de uitgang van een eenrichtingsstraat; onder het bord staat vaak "uitgezonderd fietsers".' },
-    { q: 'Wat betekent dit bord?', sign: 'C3', o: ['Verboden toegang in beide richtingen voor iedere bestuurder', 'Verboden richting voor een richting', 'Einde van alle verboden', 'Verboden voor voetgangers'], a: 0, fb: 'De volledig rode schijf sluit de straat voor iedereen af.' },
+    { q: 'Je wil linksaf een straat in, maar aan de overkant van het kruispunt zie je dit bord staan. Wat betekent dat?', sign: 'C1', o: ['Die straat is eenrichting en komt naar jou toe: je mag er niet in', 'Die straat is doodlopend', 'Je mag er in als je knipperlicht aanstaat', 'Het bord geldt alleen voor vrachtwagens'], a: 0, fb: 'C1 staat aan de kant waar je niet binnen mag. Zie je het van op afstand, dan weet je meteen dat die straat voor jou dicht is.' },
+    { q: 'Je woont in een straat waar dit bord aan beide uiteinden staat. Mag je met je auto tot aan je deur rijden?', sign: 'C3', o: ['Alleen als een onderbord bewoners of plaatselijk verkeer uitzondert', 'Ja, bewoners vallen nooit onder dit bord', 'Ja, als je stapvoets rijdt', 'Nee, nooit, ook niet met onderbord'], a: 0, fb: 'De volle rode schijf sluit iedereen uit. Een uitzondering bestaat alleen als ze op een onderbord staat.' },
     { q: 'Onder bord C1 staat "uitgezonderd fietsers". Wat betekent dat voor jou?', sign: 'C1', o: ['Je kunt fietsers tegenkomen die in de tegenovergestelde richting rijden', 'Fietsers mogen er ook niet in', 'Enkel elektrische fietsen mogen erin', 'Je mag zelf ook doorrijden als je traag rijdt'], a: 0, fb: 'Dit is de klassieke situatie van een eenrichtingsstraat met tweerichtingsfietsverkeer.' },
     { q: 'Bij bord C35: mag je een fietser voorbijrijden?', sign: 'C35', o: ['Ja, het verbod geldt voor gespannen met meer dan twee wielen', 'Nee, je mag niemand voorbijrijden', 'Enkel als de fietser op het fietspad rijdt', 'Enkel buiten de bebouwde kom'], a: 0, fb: 'Wel met de juiste zijdelingse afstand: 1 m binnen, 1,5 m buiten de bebouwde kom.' },
     { q: 'Voor wie geldt bord C39?', sign: 'C39', o: ['Vrachtwagens van meer dan 3,5 ton', 'Alle voertuigen', 'Enkel autobussen', 'Alle voertuigen met aanhangwagen'], a: 0, fb: 'Als bestuurder van een personenwagen mag jij daar gewoon inhalen.' },
     { q: 'Bord C21 vermeldt 3,5 t. Naar welk gewicht kijkt men?', sign: 'C21', o: ['De werkelijke massa van je voertuig op dat moment, lading inbegrepen', 'De maximaal toegelaten massa uit je inschrijvingsbewijs', 'Het leeggewicht van je voertuig', 'Het gewicht van de lading alleen'], a: 0, fb: 'Wat er op dat moment over de weg rijdt, telt.' },
     { q: 'Tot waar geldt bord C31b (verbod rechts af te slaan)?', sign: 'C31b', o: ['Op het eerstvolgende kruispunt', 'In de hele straat', 'Tot het einde van de bebouwde kom', 'Tot een bord C46'], a: 0, fb: 'Daarna mag je gewoon weer rechts afslaan.' },
-    { q: 'Wat betekent dit bord?', sign: 'C46', o: ['Einde van alle plaatselijke verbodsbepalingen', 'Einde van de maximumsnelheid', 'Einde van de autosnelweg', 'Einde van het inhaalverbod voor vrachtwagens'], a: 0, fb: 'Alle plaatselijke verboden vervallen in een keer.' },
+    { q: 'Je rijdt binnen de bebouwde kom en passeert dit bord. Mag je nu sneller dan 50?', sign: 'C46', o: ['Nee, de bebouwde kom is geen plaatselijke verbodsbepaling en blijft gelden', 'Ja, alle beperkingen vervallen', 'Ja, tot het volgende kruispunt', 'Ja, tot 70'], a: 0, heavy: true, fb: 'Dit bord veegt de plaatselijke verboden weg die je onderweg opliep. De bebouwde kom eindigt pas bij bord F3.' },
     { q: 'Op een bord staat 70. Het regent hevig en het zicht is slecht. Hoe snel mag je rijden?', o: ['Trager dan 70: je past je snelheid aan de omstandigheden aan', 'Precies 70, het bord is de regel', '70, want de politie tolereert marge', '50 exact'], a: 0, heavy: true, fb: 'Je moet altijd kunnen stoppen voor een voorzienbare hindernis.' },
-    { q: 'Waar kijkt bord C27 naar?', sign: 'C27', o: ['De totale hoogte van je voertuig inclusief dakkoffer of fietsen', 'De hoogte van het chassis', 'De hoogte van je lading alleen', 'De hoogte zonder antennes'], a: 0, fb: 'Alles wat boven je auto uitsteekt telt mee.' }
+    { q: 'Je rijdt met een aanhangwagen en buitenspiegels die ver uitsteken. Je nadert een wegversmalling met bord C27 dat 2,50 m aangeeft. Waarnaar moet je kijken?', sign: 'C27', o: ['Naar de totale breedte van je gespan, spiegels en lading inbegrepen', 'Naar de breedte van de carrosserie alleen', 'Naar de breedte van de aanhangwagen alleen', 'Naar de hoogte van je voertuig'], a: 0, heavy: true, fb: 'C27 kijkt naar de breedte. Alles wat zijwaarts uitsteekt telt mee: spiegels, een brede lading, een uitstekende dissel.' }
   ],
   m07: [
     { q: 'Wat verplicht dit bord?', sign: 'D1a', o: ['De richting van de pijl volgen', 'Voorrang verlenen', 'Rechtdoor is verboden', 'Stoppen en dan rechtdoor'], a: 0, fb: 'Blauw en rond betekent gebod. Je gps telt niet mee.' },
@@ -4227,7 +4227,7 @@ window.QUIZDATA = Object.assign(window.QUIZDATA || {}, {
   ],
   m08: [
     { q: 'Bij dit bord: mag je stoppen om een passagier te laten uitstappen?', sign: 'E1', o: ['Ja, stilstaan mag; enkel parkeren is verboden', 'Nee, niets mag', 'Enkel met de waarschuwingsknipperlichten aan', 'Enkel maximaal 5 minuten'], a: 0, fb: 'E1 verbiedt parkeren. E3, met het kruis, verbiedt ook stilstaan.' },
-    { q: 'Wat betekent dit bord?', sign: 'E3', o: ['Stilstaan en parkeren verboden', 'Enkel parkeren verboden', 'Parkeren toegelaten met schijf', 'Einde parkeerverbod'], a: 0, fb: 'Het rode kruis staat voor het strengste van de twee verboden.' },
+    { q: 'Onder welk van deze twee borden mag je even stoppen om iemand te laten uitstappen?', sign: 'E1,E3', o: ['Onder het eerste; het tweede verbiedt ook stilstaan', 'Onder het tweede; het eerste verbiedt ook stilstaan', 'Onder geen van beide', 'Onder allebei'], a: 0, heavy: true, fb: 'De schuine streep is een parkeerverbod, het kruis verbiedt stilstaan en parkeren allebei.' },
     { q: 'Wat is het verschil tussen stilstaan en parkeren?', o: ['Stilstaan is enkel om personen te laten in- of uitstappen of om te laden en te lossen; al de rest is parkeren', 'Stilstaan duurt korter dan 15 minuten', 'Parkeren is met de motor uit', 'Er is geen juridisch verschil'], a: 0, fb: 'De duur speelt geen rol, wel het doel van je stop.' },
     { q: 'Waar zet je de pijl van je parkeerschijf?', o: ['Op het streepje na het uur van aankomst', 'Op het exacte uur van aankomst', 'Op het uur waarop je vertrekt', 'Op het uur waarop je terugkomt'], a: 0, fb: 'Aankomst om 14.10 uur betekent de schijf op 14.30 uur.' },
     { q: 'Hoe lang mag je standaard in een blauwe zone staan?', o: ['Twee uur, tenzij een onderbord iets anders zegt', 'Een uur', 'Vier uur', 'Onbeperkt met schijf'], a: 0, fb: 'De verplichting geldt standaard op werkdagen van 9 tot 18 uur.' },
@@ -4241,7 +4241,7 @@ window.QUIZDATA = Object.assign(window.QUIZDATA || {}, {
     { q: 'Wat is de minimumsnelheid op de autosnelweg?', sign: 'F5', o: ['70 km/u', 'Er is geen minimum', '50 km/u', '90 km/u'], a: 0, heavy: true, fb: 'Voertuigen die de 70 km/u niet halen, mogen er niet op.' },
     { q: 'Wat is het belangrijkste verschil tussen een autosnelweg en een autoweg?', sign: 'F5,F9', o: ['De autoweg heeft meestal geen pechstrook en kan gelijkgrondse kruispunten hebben', 'Op de autoweg mag je sneller rijden', 'Op de autosnelweg mogen bromfietsen rijden', 'De autoweg heeft geen minimumsnelheid maar wel een pechstrook'], a: 0, fb: 'Op de autoweg geldt ook geen minimumsnelheid.' },
     { q: 'Wat geldt er in een woonerf?', sign: 'F12a', o: ['Maximaal 20 km/u, voetgangers over de hele breedte, parkeren enkel op aangeduide plaatsen', 'Maximaal 30 km/u en vrij parkeren', 'Stapvoets rijden en verbod voor auto&#8217;s', 'Maximaal 50 km/u'], a: 0, heavy: true, fb: 'Kinderen mogen er spelen; jij bent er te gast.' },
-    { q: 'Wat betekent dit bord?', sign: 'F111', o: ['Begin fietszone: maximaal 30 km/u en je mag fietsers niet inhalen', 'Fietspad verplicht', 'Verboden voor auto&#8217;s', 'Einde fietszone'], a: 0, fb: 'Het inhaalverbod is absoluut, ook als er ruimte genoeg is.' },
+    { q: 'Je rijdt een fietszone binnen met dit bord en er is geen enkele fietser te zien. Hoe snel mag je?', sign: 'F111', o: ['Hoogstens 30 km/u, de zone geldt ook als er geen fietsers zijn', '50 km/u zolang er geen fietsers zijn', '30 km/u alleen tijdens de spits', 'De snelheid van de straat waar je vandaan komt'], a: 0, fb: 'Een zone geldt op zichzelf, niet pas als je iemand ziet. In een fietszone is 30 de bovengrens en mag je fietsers nooit inhalen.' },
     { q: 'Wie mag op een busstrook met bord F17 rijden?', sign: 'F17', o: ['Het geregeld openbaar vervoer; jij enkel om aan het volgende kruispunt rechts af te slaan', 'Iedereen buiten de spitsuren', 'Alle voertuigen met meer dan twee inzittenden', 'Taxi&#8217;s en fietsers altijd'], a: 0, fb: 'Andere categorie&#235;n mogen er enkel op als hun symbool op het bord staat.' },
     { q: 'Wat betekent bord F19?', sign: 'F19', o: ['Eenrichtingsverkeer', 'Verplicht rechtdoor', 'Autoweg', 'Rijstrook voorbehouden'], a: 0, fb: 'Let op: fietsers mogen er vaak wel in beide richtingen.' },
     { q: 'Wat betekent bord F45?', sign: 'F45', o: ['Doodlopende weg', 'Verboden toegang', 'Verplichte rijrichting', 'Einde bebouwde kom'], a: 0, fb: 'Sommige varianten tonen dat de weg wel doorloopt voor fietsers en voetgangers.' },
@@ -4534,7 +4534,7 @@ window.EXAMDATA = [
   { q: 'Wat betekent dit bord?', sign: 'F19', o: ['Eenrichtingsweg', 'Verplicht rechtdoor', 'Autoweg', 'Rijstrook voorbehouden'], a: 0, fb: 'Op een eenrichtingsweg hoef je geen tegenliggers te verwachten, maar wel fietsers als een onderbord dat toelaat.' },
   { q: 'Bij mist bedraagt het zicht ongeveer 150 meter. Hoe snel mag je maximaal rijden?', o: ['50 km/u', '70 km/u', '90 km/u', 'De snelheid die op het bord staat'], a: 0, heavy: true, fb: 'Bij minder dan 200 meter zicht geldt overal een maximum van 50 km/u.' },
   { q: 'Je nadert een overweg zonder slagbomen. De rode lichten knipperen niet en je hoort niets.', o: ['Je vertraagt, kijkt links en rechts en steekt pas over als je zeker bent', 'Je rijdt door aan normale snelheid', 'Je stopt altijd volledig', 'Je claxonneert en rijdt door'], a: 0, heavy: true, fb: 'Bij een onbewaakte overweg is kijken en luisteren jouw verantwoordelijkheid.' },
-  { q: 'Welk bord is dit?', sign: 'E9i', o: ['Parkeren voorbehouden aan personen met een handicap', 'Parkeren toegelaten', 'Parkeren voorbehouden aan personenauto&#8217;s', 'Parkeerverbod'], a: 0, fb: 'Zonder geldige parkeerkaart is dit een derdegraadsovertreding.' },
+  { q: 'Je parkeert kort op een plaats met bord E9a en het rolstoelsymbool, zonder parkeerkaart. Je blijft drie minuten weg. Wat riskeer je?', sign: 'E9a', o: ['Een overtreding van de derde graad, de duur speelt geen rol', 'Niets, drie minuten is stilstaan en geen parkeren', 'Een waarschuwing van de politie', 'Een overtreding van de eerste graad'], a: 0, heavy: true, fb: 'Op een voorbehouden plaats staan zonder geldige kaart is altijd een derdegraadsovertreding, hoe kort ook.' },
   { q: 'Je rijdt met een aanhangwagen van 600 kg achter je auto. Welk rijbewijs volstaat?', o: ['Het gewone rijbewijs B', 'Rijbewijs BE', 'Rijbewijs B met code 96', 'Rijbewijs C'], a: 0, fb: 'Tot 750 kg volstaat B; daarboven hangt het af van de totale massa van de combinatie.' },
   { q: 'Wat betekent dit bord?', sign: 'A50', o: ['Kans op file of stilstaand verkeer', 'Verplicht ritsen', 'Verboden in te halen', 'Werken over meerdere kilometers'], a: 0, fb: 'Zet bij het naderen van de file je waarschuwingsknipperlichten aan.' },
   { q: 'Wat doe je in een tunnel bij stilstaand verkeer?', o: ['Motor uit, afstand houden en luisteren naar de aangegeven radiofrequentie', 'Keren en terugrijden naar de ingang', 'Achteruitrijden', 'Je auto verlaten en naar buiten stappen'], a: 0, fb: 'Keren en achteruitrijden zijn er verboden, behalve op bevel van de hulpdiensten.' },
@@ -4561,7 +4561,7 @@ window.EXAMDATA2 = [
   { q: 'Welk document heb je niet nodig aan boord van je voertuig?', o: ['Je geboorteakte', 'Het inschrijvingsbewijs', 'Het gelijkvormigheidsattest', 'Het verzekeringsbewijs'], a: 0, fb: 'Wel nodig zijn ook je rijbewijs en, indien van toepassing, het keuringsbewijs.' },
   { q: 'Wat betekent dit bord?', sign: 'A13', o: ['Overdwarse uitholling of ezelsrug', 'Verhoogde inrichting', 'Slipgevaar', 'Rijbaanversmalling'], a: 0, fb: 'Je zicht valt weg en je vering wordt belast: snelheid minderen en niet inhalen.' },
   { q: 'Je rijdt in een file op de autosnelweg. Er nadert een ziekenwagen met sirene. Wat doe je?', o: ['Je vormt een reddingsstrook tussen de twee meest linkse rijstroken', 'Je wijkt uit naar de pechstrook', 'Je blijft staan waar je staat', 'Je rijdt naar de volgende afrit'], a: 0, heavy: true, fb: 'De reddingsstrook vorm je meteen, niet pas wanneer je de sirene hoort.' },
-  { q: 'Wat betekent dit bord?', sign: 'C29', o: ['Verboden voor voertuigen langer dan de aangegeven lengte', 'Verboden voor vrachtwagens', 'Verboden voor voertuigen boven een bepaalde massa', 'Verboden voor aanhangwagens'], a: 0, fb: 'Bij een gespan tel je voertuig en aanhangwagen samen.' },
+  { q: 'Je rijdt met fietsen op het dak naar een ondergrondse parking. Aan de inrit staat dit bord met 2,00 m. Wat doe je?', sign: 'C29', o: ['Niet binnenrijden: met de fietsen erop ben je hoger dan 2,00 m', 'Binnenrijden, want het geldt enkel voor bestelwagens', 'Binnenrijden, want het gaat over de hoogte van het chassis', 'Binnenrijden, maar heel traag'], a: 0, heavy: true, fb: 'C29 kijkt naar de hoogte, lading inbegrepen. Een dakkoffer of fietsendrager tilt je zo over de grens.' },
   { q: 'Hoe lang duurt het rijverbod ter plaatse bij een positieve drugstest?', o: ['12 uur', '3 uur', '6 uur', '24 uur'], a: 0, fb: 'Sinds 1 juli 2026 geldt dat ook voor alcohol vanaf 0,5 promille.' },
   { q: 'Wat betekent dit bord?', sign: 'E9e', o: ['Je moet volledig op de berm of het trottoir parkeren', 'Je moet gedeeltelijk op de berm parkeren', 'Je moet volledig op de rijbaan parkeren', 'Parkeren verboden'], a: 0, fb: 'E9f is gedeeltelijk, E9g volledig op de rijbaan.' },
   { q: 'Mag je met een voorlopig rijbewijs een aanhangwagen van 1.000 kg trekken?', o: ['Nee, met een voorlopig rijbewijs mag je maximaal 750 kg trekken', 'Ja, als de combinatie onder 3.500 kg blijft', 'Ja, met code 96', 'Ja, met je begeleider erbij'], a: 0, fb: 'Dat is een van de vaste beperkingen van het voorlopig rijbewijs.' },
@@ -4592,7 +4592,7 @@ window.EXAMDATA2 = [
   { q: 'Welk bord is dit?', sign: 'F13', o: ['Rijstrookaanduiding: welke strook welke richting volgt', 'Verplichte rijrichting', 'Eenrichtingsverkeer', 'Autoweg'], a: 0, fb: 'Kies tijdig je strook, niet vlak voor het kruispunt.' },
   { q: 'Wat is de eerste graad van overtredingen typisch?', o: ['Een richtingaanwijzer niet gebruiken', 'Door rood rijden', 'Vluchtmisdrijf', 'Een gsm vasthouden'], a: 0, fb: 'Door rood rijden en gsm zijn derde graad; vluchtmisdrijf is vierde graad.' },
   { q: 'Wat doe je als je in een tunnel een brand ziet voor je?', o: ['Sleutel in het contact laten, iedereen meenemen en te voet naar de nooduitgang', 'Keren en terugrijden', 'In je auto blijven met de ramen dicht', 'Achteruitrijden naar de ingang'], a: 0, heavy: true, fb: 'De hulpdiensten moeten je auto kunnen verplaatsen.' },
-  { q: 'Welk bord is dit?', sign: 'C25', o: ['Verboden voor voertuigen breder dan de aangegeven breedte', 'Verboden voor voertuigen hoger dan aangegeven', 'Verboden voor voertuigen langer dan aangegeven', 'Rijbaanversmalling'], a: 0, fb: 'De breedte wordt gemeten inclusief de lading en uitstekende spiegels.' },
+  { q: 'Je sleept een caravan. Voor een smal dorpscentrum staat dit bord met 10 m. Je auto is 4,60 m en je caravan 6,20 m. Mag je erdoor?', sign: 'C25', o: ['Nee, samen ben je 10,80 m en dat is te lang', 'Ja, want je auto alleen blijft onder de 10 m', 'Ja, want de caravan telt niet mee', 'Ja, als je stapvoets rijdt'], a: 0, heavy: true, fb: 'C25 kijkt naar de lengte. Bij een gespan tel je trekkend voertuig en aanhangwagen samen.' },
   { q: 'Mag je met je auto op een bijzondere overrijdbare bedding (F18) rijden?', sign: 'F18', o: ['Nee, tenzij het bord jouw categorie uitdrukkelijk vermeldt', 'Ja, om rechts af te slaan', 'Ja, buiten de spitsuren', 'Ja, als er geen bus aankomt'], a: 0, fb: 'De busstrook F17 kent wel de uitzondering om rechts af te slaan.' },
   { q: 'Je rijdt achter een fietser in een straat waar 50 km/u geldt en je kunt geen 1 meter afstand nemen. Wat doe je?', o: ['Je blijft achter hem tot je veilig kunt inhalen', 'Je haalt voorzichtig in met minder afstand', 'Je claxonneert zodat hij opschuift', 'Je rijdt half over het fietspad'], a: 0, heavy: true, fb: 'Kun je de zijdelingse afstand niet respecteren, dan haal je niet in.' }
 ];
@@ -4622,10 +4622,10 @@ window.QEXTRA = [
   { l: 'm03', q: 'Onder een bord staat "uitgezonderd plaatselijk verkeer". Wat betekent dat?', o: ['Enkel wie er een bestemming of herkomst heeft, mag doorrijden', 'Iedereen mag doorrijden als hij traag rijdt', 'Enkel bewoners met een vergunning', 'Enkel leveringen'], a: 0, fb: 'Er doorheen rijden naar elders mag dus niet.' },
 
   /* ---- les 04 ---- */
-  { l: 'm04', q: 'Wat betekent dit bord?', sign: 'A17', o: ['Kiezelprojectie: losliggend grind wordt opgeworpen', 'Vallende stenen', 'Werken', 'Slipgevaar'], a: 0, fb: 'Hou extra afstand, anders krijg je stenen tegen je ruit of geef je ze door.' },
-  { l: 'm04', q: 'Wat betekent dit bord?', sign: 'A7a', o: ['Rijbaanversmalling', 'Beweegbare brug', 'Verkeersgeleider', 'Doorgang met beperkte breedte'], a: 0, fb: 'Kijk of er borden B19 of B21 bij staan die de voorrang regelen.' },
-  { l: 'm04', q: 'Wat betekent dit bord?', sign: 'A39', o: ['Tweerichtingsverkeer: einde van een eenrichtingsstuk', 'Verboden richting', 'Inhaalverbod', 'Verplicht rechtdoor'], a: 0, fb: 'Je vindt het vaak op autosnelwegen waar een rijbaan afgesloten is.' },
-  { l: 'm04', q: 'Wat betekent dit bord?', sign: 'A49', o: ['Kruising met een tram', 'Overweg met slagbomen', 'Overweg zonder slagbomen', 'Bijzondere overrijdbare bedding'], a: 0, fb: 'Een tram heeft altijd voorrang wanneer hij je weg kruist.' },
+  { l: 'm04', q: 'Achter jou rijdt een motorrijder op een pas herstelde weg met dit bord. Wat houdt je in?', sign: 'A17', o: ['Je snelheid, want je wielen slingeren stenen naar achteren', 'Je afstand tot de berm', 'Je keuze van rijstrook', 'Niets, achter je rijden is zijn verantwoordelijkheid'], a: 0, fb: 'Op los grind ben je zelf de bron van het gevaar voor wie achter je rijdt. Traag rijden werpt minder ver.' },
+  { l: 'm04', q: 'Bij een versmalling met dit bord staat geen bord B19 of B21. Mag je doorrijden omdat jij er het eerst bent?', sign: 'A7a', o: ['Alleen als je zeker weet dat je veilig kunt kruisen; er is hier geen voorrangsregel', 'Ja, wie er het eerst is mag door', 'Nee, de tegenligger heeft altijd voorrang', 'Ja, want een gevaarsbord regelt de voorrang'], a: 0, fb: 'Geen voorrangsregel betekent niet dat iedereen mag doorrijden. Het betekent dat je het samen moet oplossen.' },
+  { l: 'm04', q: 'Op een autosnelweg is een rijbaan afgesloten en staat dit bord. Wat verandert er?', sign: 'A39', o: ['Op jouw rijbaan kan verkeer in de tegenrichting komen', 'De maximumsnelheid gaat omhoog', 'Je mag daar keren', 'De pechstrook wordt rijstrook'], a: 0, heavy: true, fb: 'Bij werken leidt men het tegenverkeer soms over jouw rijbaan. Een middenberm die er altijd was, is er dan plots niet meer.' },
+  { l: 'm04', q: 'Voor je stopt een tram aan een halte zonder verhoogd perron en er stappen reizigers uit op de rijbaan. Wat doe je?', sign: 'A49', o: ['Je stopt en laat ze veilig in- en uitstappen', 'Je rijdt er traag voorbij', 'Je toetert en rijdt door', 'Je haalt de tram links in'], a: 0, heavy: true, fb: 'Zonder perron stappen reizigers recht op de rijbaan. Je moet stoppen tot ze veilig weg zijn.' },
   { l: 'm04', q: 'Je passeert bord A3 met een lange daling. Wat is de juiste techniek?', sign: 'A3', o: ['Terugschakelen en de motor laten afremmen', 'In vrijloop uitrollen', 'Voortdurend zacht op de rem blijven', 'De motor afzetten om brandstof te sparen'], a: 0, fb: 'Voortdurend remmen doet je remmen oververhitten en kracht verliezen.' },
 
   /* ---- les 05 ---- */
@@ -4635,28 +4635,28 @@ window.QEXTRA = [
   { l: 'm05', q: 'Wat verandert er voor jou bij bord B11?', sign: 'B11', o: ['Je verliest je voorrang: vanaf hier geldt de voorrang van rechts', 'Je krijgt voorrang', 'Je moet stoppen', 'De maximumsnelheid verandert'], a: 0, heavy: true, fb: 'Veel bestuurders blijven na dit bord ten onrechte in voorrangsmodus.' },
 
   /* ---- les 06 ---- */
-  { l: 'm06', q: 'Wat betekent dit bord?', sign: 'C9', o: ['Verboden voor bromfietsen', 'Verboden voor motorfietsen', 'Verboden voor fietsers', 'Verboden voor alle tweewielers'], a: 0, fb: 'Het geldt voor bromfietsen klasse A en B.' },
-  { l: 'm06', q: 'Wat betekent dit bord?', sign: 'C45', o: ['Einde van de opgelegde maximumsnelheid', 'Begin van een snelheidsbeperking', 'Aanbevolen snelheid', 'Minimumsnelheid'], a: 0, fb: 'Daarna geldt weer de algemene snelheid van dat wegtype.' },
-  { l: 'm06', q: 'Wat betekent dit bord?', sign: 'C19', o: ['Verboden voor voetgangers', 'Verplichte weg voor voetgangers', 'Oversteekplaats voor voetgangers', 'Voetgangerszone'], a: 0, fb: 'De rode cirkel verbiedt, de blauwe cirkel D11 verplicht.' },
+  { l: 'm06', q: 'Je rijdt met een bromfiets klasse A door een straat met dit bord. Mag dat?', sign: 'C9', o: ['Nee, het bord sluit bromfietsen van klasse A en B uit', 'Ja, het geldt alleen voor klasse B', 'Ja, als je trager dan 25 km/u rijdt', 'Ja, als je de motor uitzet'], a: 0, fb: 'Het pictogram is de bromfiets. Beide klassen vallen eronder.' },
+  { l: 'm06', q: 'Je passeert dit bord terwijl je nog binnen de bebouwde kom rijdt. Hoe snel mag je?', sign: 'C45', o: ['50 km/u, want de bebouwde kom blijft gelden', 'Zo snel als veilig is', '70 km/u', '90 km/u'], a: 0, heavy: true, fb: 'Het einde van een plaatselijke beperking brengt je terug naar de algemene regel van die weg. Binnen de kom is dat 50.' },
+  { l: 'm06', q: 'Je stapt af en gaat te voet verder met je fiets aan de hand, een straat in met dit bord. Mag dat?', sign: 'C19', o: ['Nee, met je fiets aan de hand ben je voetganger en dit bord sluit voetgangers uit', 'Ja, met de fiets aan de hand ben je bestuurder', 'Ja, als je op de rijbaan blijft', 'Ja, buiten de spitsuren'], a: 0, fb: 'Wie zijn fiets aan de hand houdt, telt als voetganger. Het bord met de doorstreepte voetganger geldt dan voor jou.' },
   { l: 'm06', q: 'Je rijdt een straat in met bord C3. Wat riskeer je?', sign: 'C3', o: ['Een overtreding, want niemand mag er in', 'Niets, als je traag rijdt', 'Enkel een waarschuwing', 'Niets, als je er een bestemming hebt'], a: 0, fb: 'C1 laat wel verkeer uit de andere richting toe; C3 sluit iedereen uit.' },
   { l: 'm06', q: 'Onder welk bord zie je vaak "uitgezonderd fietsers" staan?', sign: 'C1', o: ['Onder C1, aan de uitgang van een eenrichtingsstraat', 'Onder C43', 'Onder C35', 'Onder C21'], a: 0, fb: 'Reken er dus op dat je fietsers tegemoet kunt krijgen.' },
 
   /* ---- les 07 ---- */
-  { l: 'm07', q: 'Wat betekent dit bord?', sign: 'D9a', o: ['Gescheiden pad: fietsers aan de ene kant, voetgangers aan de andere', 'Gedeeld pad voor fietsers en voetgangers', 'Verboden voor fietsers en voetgangers', 'Oversteekplaats'], a: 0, fb: 'De verticale streep toont de opsplitsing.' },
+  { l: 'm07', q: 'Langs de rijbaan ligt een pad met dit bord en er is nergens plaats om te stoppen. Mag je er even op staan?', sign: 'D9a', o: ['Nee, je mag er niet rijden, niet stilstaan en niet parkeren', 'Ja, aan de kant van de voetgangers', 'Ja, als je waarschuwingsknipperlichten aanstaan', 'Ja, hoogstens vijf minuten'], a: 0, heavy: true, fb: 'Het pad is toegewezen aan voetgangers en fietsers. Wie er met de auto op staat, duwt hen de rijbaan op.' },
   { l: 'm07', q: 'Mag je met de auto op een verplicht fietspad rijden om een file te omzeilen?', sign: 'D7', o: ['Nee, in geen enkel geval', 'Ja, als er geen fietsers zijn', 'Ja, stapvoets', 'Enkel buiten de spitsuren'], a: 0, heavy: true, fb: 'Je mag het enkel dwars kruisen om een zijweg of eigendom te bereiken.' },
-  { l: 'm07', q: 'Wat betekent dit bord?', sign: 'D1c', o: ['Links aanhouden: langs de linkerkant van het obstakel rijden', 'Links afslaan op het kruispunt', 'Verplicht rechtdoor', 'Verboden links af te slaan'], a: 0, fb: 'De schuine pijl betekent aanhouden, niet afslaan. Voor links afslaan is er bord D1e.' },
-  { l: 'm07', q: 'Wat betekent dit bord?', sign: 'D1e', o: ['Verplicht linksaf op het kruispunt', 'Links aanhouden langs een obstakel', 'Verboden links af te slaan', 'Verplicht rechtdoor'], a: 0, fb: 'De knik in de pijl betekent afslaan. Voor links aanhouden is er bord D1c.' },
+  { l: 'm07', q: 'Op deze twee borden wijst de ene pijl schuin en heeft de andere een knik. Wat is het verschil?', sign: 'D1c,D1e', o: ['Schuin betekent aanhouden langs een obstakel, een knik betekent afslaan op het kruispunt', 'Schuin geldt voor fietsers, met knik voor auto&#8217;s', 'Schuin is een aanbeveling, met knik een verplichting', 'Er is geen verschil'], a: 0, fb: 'Dat verschil kost punten op het examen. Kijk naar de vorm van de pijl, niet naar de richting alleen.' },
+  { l: 'm07', q: 'Dit bord staat aan een kruispunt met verkeerslichten. Het licht springt op groen. Welke richting mag je uit?', sign: 'D1e', o: ['Alleen naar links', 'Alle richtingen, want groen geeft vrije doorgang', 'Links of rechtdoor', 'Rechtdoor, want het bord geldt enkel bij rood'], a: 0, heavy: true, fb: 'Groen betekent dat je door mag rijden, niet dat je de richting mag kiezen. Het gebodsbord blijft gelden.' },
   { l: 'm07', q: 'Je ziet bord D1d op een vluchtheuvel. Wat doe je?', sign: 'D1d', o: ['Je rijdt langs de rechterkant van de vluchtheuvel verder in dezelfde straat', 'Je slaat rechts af', 'Je keert om', 'Je stopt en verleent voorrang'], a: 0, fb: 'Aanhouden betekent uitwijken, niet afslaan.' },
 
   /* ---- les 08 ---- */
   { l: 'm08', q: 'Je laadt meubels uit onder een bord E1. Is dat toegelaten?', sign: 'E1', o: ['Ja, laden en lossen is stilstaan en dat mag bij E1', 'Nee, alles is verboden', 'Enkel korter dan vijf minuten', 'Enkel met je knipperlichten aan'], a: 0, fb: 'Bij bord E3 zou zelfs dat verboden zijn.' },
-  { l: 'm08', q: 'Wat betekent dit bord?', sign: 'E9d', o: ['Parkeren voorbehouden aan personenauto&#8217;s', 'Parkeren voorbehouden aan vrachtwagens', 'Parkeren voorbehouden aan autocars', 'Parkeren toegelaten voor iedereen'], a: 0, fb: 'E9b is voor autocars, E9c voor vrachtwagens, E9h voor motorfietsen.' },
+  { l: 'm08', q: 'Je zoekt een plaats voor je personenauto en ziet een rij vakken met dit bord. Mag je er staan?', sign: 'E9d', o: ['Nee, deze plaatsen zijn voorbehouden aan autocars', 'Ja, iedereen mag er staan', 'Ja, maar hoogstens twee uur', 'Enkel als je een parkeerschijf legt'], a: 0, fb: 'Kijk naar het voertuig op het bord: E9b is de personenauto, E9c de vrachtwagen, E9d de autocar, E9h de kampeerauto en E9i de motorfiets.' },
   { l: 'm08', q: 'Je komt aan om 10.05 uur in een blauwe zone. Waar zet je je schijf?', o: ['Op 10.30 uur', 'Op 10.00 uur', 'Op 10.05 uur', 'Op 12.00 uur, het einde van je parkeertijd'], a: 0, fb: 'Je zet de pijl altijd op het streepje na je aankomstuur.' },
   { l: 'm08', q: 'Wat betekent een pijl in twee richtingen op het onderbord onder een E-bord?', o: ['Je bevindt je midden in de zone', 'De zone begint hier', 'De zone eindigt hier', 'De regel geldt aan beide kanten van de straat'], a: 0, fb: 'Pijl omhoog is begin, pijl omlaag is einde.' },
 
   /* ---- les 09 ---- */
-  { l: 'm09', q: 'Wat betekent dit bord?', sign: 'F9', o: ['Autoweg: voorbehouden aan motorvoertuigen', 'Autosnelweg', 'Weg met voorrang', 'Eenrichtingsweg'], a: 0, fb: 'Er is meestal geen pechstrook en er kunnen gelijkgrondse kruispunten zijn.' },
-  { l: 'm09', q: 'Wat betekent dit bord?', sign: 'F103', o: ['Begin van een voetgangerszone', 'Oversteekplaats voor voetgangers', 'Verboden voor voetgangers', 'Woonerf'], a: 0, fb: 'Wie er uitzonderlijk mag rijden, rijdt stapvoets.' },
+  { l: 'm09', q: 'Je krijgt pech op een weg met dit bord. Waar zet je je auto?', sign: 'F9', o: ['Zo ver mogelijk rechts, want een pechstrook is er meestal niet', 'Op de pechstrook, die er altijd is', 'Op de linkerrijstrook, die is rustiger', 'Midden op de rijbaan met je knipperlichten aan'], a: 0, heavy: true, fb: 'Een autoweg heeft meestal geen pechstrook. Je zet je gevarendriehoek en verlaat de wagen langs de veilige kant.' },
+  { l: 'm09', q: 'Een onderbord laat je uitzonderlijk toe deze zone in te rijden. Hoe snel mag je er dan?', sign: 'F103', o: ['Stapvoets', '20 km/u', '30 km/u', '50 km/u'], a: 0, fb: 'In een voetgangerszone ben je te gast. Wie er uitzonderlijk mag rijden, rijdt stapvoets en geeft voetgangers voorrang.' },
   { l: 'm09', q: 'Welk bord kondigt een verhoogde inrichting ter plaatse aan?', sign: 'F87', o: ['Dit bord', 'Bord A14', 'Bord F4a', 'Bord C43'], a: 0, fb: 'A14 waarschuwt op afstand, F87 duidt ze ter plaatse aan.' },
   { l: 'm09', q: 'Wat geldt er in een fietszone?', sign: 'F111', fig: 'fietsstraat-layout', o: ['Maximaal 30 km/u en een absoluut inhaalverbod voor fietsers', 'Maximaal 50 km/u en voorrang voor fietsers', 'Enkel fietsers toegelaten', 'Maximaal 20 km/u'], a: 0, heavy: true, fb: 'Auto&#8217;s zijn er te gast; de fiets bepaalt het tempo.' },
 
@@ -4789,6 +4789,500 @@ window.QEXTRA = [
 
 </script>
 <script>
+/* Bordenvragen in situatievorm.
+   Niet "wat betekent dit bord", maar: je rijdt ergens, je ziet dit bord,
+   wat doe je dan. Het juiste antwoord staat telkens eerst; de cursus en het
+   boek schudden de volgorde zelf. */
+window.QBORDEN = [
+
+  /* ================= les 04: gevaarsborden, reeks A ================= */
+
+  { l: 'm04', sign: 'A15', q: 'Je rijdt op een gewestweg buiten de bebouwde kom en ziet dit bord. Waar ligt het gevaar?',
+    o: ['Ongeveer 150 meter verder', 'Meteen naast het bord', 'Ongeveer 25 meter verder', 'Ergens in de volgende kilometer, dat zegt het bord niet'],
+    a: 0, fb: 'Buiten de bebouwde kom staat een gevaarsbord op ongeveer 150 m voor het gevaar, binnen de bebouwde kom op ongeveer 25 m.' },
+
+  { l: 'm04', sign: 'A19', q: 'Hetzelfde soort bord, maar nu in een dorpsstraat binnen de bebouwde kom. Vanaf waar moet je erop bedacht zijn?',
+    o: ['Vrijwel meteen, na ongeveer 25 meter', 'Pas na 150 meter', 'Pas na 500 meter', 'Vanaf het volgende kruispunt'],
+    a: 0, fb: 'Binnen de bebouwde kom staat het bord veel dichter bij het gevaar: ongeveer 25 m.' },
+
+  { l: 'm04', sign: 'A23', q: 'Je nadert een school met dit bord. Een groepje kinderen staat op het trottoir te praten. Wat verandert er juridisch aan de voorrangsregels?',
+    o: ['Niets, maar je moet je snelheid zo aanpassen dat je kunt stoppen', 'De kinderen krijgen voorrang op de rijbaan', 'Je moet altijd stoppen tot ze weg zijn', 'Je mag er nooit sneller dan 30 km/u rijden'],
+    a: 0, heavy: true, fb: 'Een gevaarsbord geeft niemand voorrang. Het waarschuwt. De plicht die er wel uit volgt: zo rijden dat een onverwachte beweging van een kind geen ongeval wordt.' },
+
+  { l: 'm04', sign: 'A21', q: 'Na dit bord ligt een zebrapad. Een voetganger staat duidelijk klaar om over te steken. Wat doe je?',
+    o: ['Je verleent voorrang, want het zebrapad zelf geeft hem die', 'Je rijdt door, want het bord geeft hem geen voorrang', 'Je toetert om hem te laten wachten', 'Je rijdt door als je er voor hem bent'],
+    a: 0, heavy: true, fb: 'Het bord waarschuwt alleen. De voorrang komt van het zebrapad: wie erop stapt of op het punt staat dat te doen, krijgt voorrang.' },
+
+  { l: 'm04', sign: 'A25', q: 'Je nadert dit bord. Van rechts komt een fietser op een fietspad dat de weg dadelijk kruist. Geeft het bord hem voorrang?',
+    o: ['Nee, het waarschuwt alleen; wie voorrang heeft volgt uit de gewone regels', 'Ja, het bord geeft fietsers altijd voorrang', 'Nee, en fietsers hebben er nooit voorrang', 'Ja, maar alleen overdag'],
+    a: 0, fb: 'Gevaarsborden regelen geen voorrang. Ze vertellen je waar je iets mag verwachten.' },
+
+  { l: 'm04', sign: 'A43', q: 'Je nadert een overweg zonder slagbomen. Aan de overkant staat het verkeer stil tot vlak na de sporen. Wat doe je?',
+    o: ['Je wacht voor de overweg tot je er zeker volledig over kunt', 'Je rijdt tot op de sporen en schuift mee op', 'Je rijdt door, want er komt geen trein aan', 'Je steekt schuin over om sneller vrij te komen'],
+    a: 0, heavy: true, fb: 'Nooit een overweg oprijden als je er niet in een keer volledig over kunt. Stilstaan op de sporen is levensgevaarlijk en je kunt niet terug.' },
+
+  { l: 'm04', sign: 'A47', q: 'Er passeert een trein en je ziet het Andreaskruis met twee balken. De trein is voorbij. Wat betekenen die twee balken?',
+    o: ['Meerdere sporen: er kan meteen een tweede trein volgen', 'Twee overwegen kort na elkaar', 'Een overweg met dubbele slagbomen', 'Een overweg voor goederentreinen'],
+    a: 0, heavy: true, fb: 'Twee balken betekenen meer dan een spoor. De trein die net passeerde, kan het zicht op een tweede hebben weggenomen.' },
+
+  { l: 'm04', sign: 'A45', q: 'Aan een overweg staat het Andreaskruis met een enkele balk. Wat leid je daaruit af?',
+    o: ['Er is een spoor', 'Er zijn slagbomen', 'Er zijn geen lichten', 'De overweg wordt binnenkort opgeheven'],
+    a: 0, fb: 'Een balk is een spoor, twee balken zijn meerdere sporen. Over slagbomen of lichten zegt het kruis niets.' },
+
+  { l: 'm04', sign: 'A41', q: 'De slagbomen voor je beginnen te dalen terwijl er nog ruimte is om eronderdoor te glippen. Wat doe je?',
+    o: ['Je stopt voor de overweg en wacht tot de bomen weer openen', 'Je rijdt snel door zolang het kan', 'Je zigzagt tussen de bomen door', 'Je rijdt door als je geen trein hoort'],
+    a: 0, heavy: true, fb: 'Zodra de lichten knipperen of de bomen bewegen, is de overweg gesloten voor jou. Wat je hoort of ziet doet niet ter zake.' },
+
+  { l: 'm04', sign: 'A14', q: 'Je nadert dit bord in een wijkstraat. Hoe rijd je eroverheen?',
+    o: ['Traag en gelijkmatig, meestal is 30 km/u aangeduid', 'Snel, zodat je er vlot overheen wipt', 'Je remt stevig op de drempel zelf', 'Je wijkt uit naar de berm om de drempel te vermijden'],
+    a: 0, fb: 'Remmen op de drempel zelf laat je auto duiken en kost grip. Snelheid minderen doe je ervoor.' },
+
+  { l: 'm04', sign: 'A13', q: 'Je rijdt op een landweg met dit bord en wil de tractor voor je inhalen. Wat is het probleem?',
+    o: ['Achter de bult zie je niets, dus je weet niet of de weg vrij is', 'Je mag tractoren nooit inhalen', 'Je auto raakt de grond bij het inhalen', 'Het bord verbiedt inhalen uitdrukkelijk'],
+    a: 0, heavy: true, fb: 'Een ezelsrug neemt je zicht weg precies op het moment dat je het nodig hebt. Inhalen kan pas als je genoeg ver vooruit kijkt.' },
+
+  { l: 'm04', sign: 'A3', q: 'Je begint aan een lange afdaling met dit bord. Hoe hou je je snelheid in de hand?',
+    o: ['Je schakelt terug en laat de motor afremmen', 'Je blijft licht op de rem staan tot beneden', 'Je zet de versnelling in vrij om soepel te rollen', 'Je rijdt sneller zodat je er vlug voorbij bent'],
+    a: 0, fb: 'Blijven slepen op de rem laat de remmen oververhitten. Een lagere versnelling doet het werk zonder dat je iets verslijt.' },
+
+  { l: 'm04', sign: 'A5', q: 'Je nadert een steile helling met dit bord. Waar hou je rekening mee?',
+    o: ['Met traag optrekkend vrachtverkeer en tegenliggers die je strook innemen', 'Met een lager snelheidslimiet dat automatisch geldt', 'Met een inhaalverbod dat automatisch geldt', 'Met een verplichting om terug te schakelen'],
+    a: 0, fb: 'Het bord legt niets op. Het waarschuwt voor wat je op een helling tegenkomt: zwaar verkeer dat kruipt en tegenliggers die uitwijken.' },
+
+  { l: 'm04', sign: 'A17', q: 'Achter dit bord rijdt een bestelwagen voor je op een pas herstelde weg. Wat doe je?',
+    o: ['Je vergroot je afstand en mindert snelheid', 'Je haalt in om uit de steenslag te blijven', 'Je rijdt vlak achter hem zodat de stenen over je heen gaan', 'Je zet je ruitenwissers aan en rijdt gewoon door'],
+    a: 0, fb: 'Losliggend grind wordt door de wielen weggeslingerd. Afstand is de enige bescherming voor je ruit en voor wie achter je rijdt.' },
+
+  { l: 'm04', sign: 'A37', q: 'Je rijdt met een aanhangwagen over een open brug waar dit bord staat. Wat is het gevaar?',
+    o: ['Een plotse zijwindstoot die je en je aanhangwagen opzij duwt', 'Dat je aanhangwagen losschiet', 'Dat de brug glad is door de wind', 'Dat je motor koud wordt'],
+    a: 0, fb: 'Bij het verlaten van de beschutting van een berm, tunnel of vrachtwagen komt de wind er in een keer op. Snelheid minderen en het stuur stevig vasthouden.' },
+
+  { l: 'm04', sign: 'A39', q: 'Je rijdt een eenrichtingsstraat uit en ziet dit bord. Wat verandert er?',
+    o: ['Verderop kun je tegenliggers krijgen, dus je houdt rechts', 'De straat wordt breder', 'Je mag vanaf hier keren', 'Je krijgt voorrang op het kruisende verkeer'],
+    a: 0, heavy: true, fb: 'Na maanden eenrichting rijd je makkelijk te ver naar het midden. Dit bord zegt: er kan weer iemand recht op je af komen.' },
+
+  { l: 'm04', sign: 'A51', q: 'Dit bord staat langs de weg met een onderbord waarop "ijzel" staat. Wat betekent dat samen?',
+    o: ['Het onderbord vertelt welk gevaar bedoeld wordt', 'Het onderbord geldt alleen voor vrachtwagens', 'Het bord is ongeldig zonder pictogram', 'Je moet stoppen en wachten'],
+    a: 0, fb: 'A51 is het bord voor gevaren waarvoor geen apart pictogram bestaat. Het onderbord maakt het concreet.' },
+
+  { l: 'm04', sign: 'A31', q: 'Bij werken staat dit bord, maar een wegwerker met een bevoegdheidsteken wuift je een andere richting uit dan de omleidingsborden. Wie volg je?',
+    o: ['De bevoegde persoon, die gaat voor op borden en markeringen', 'De omleidingsborden, want die zijn officieel geplaatst', 'De weg die je gps aangeeft', 'De auto voor je'],
+    a: 0, heavy: true, fb: 'De volgorde is: bevoegd persoon, dan lichten, dan borden, dan markeringen. Een mens ter plaatse weet wat er net is veranderd.' },
+
+  { l: 'm04', sign: 'A49', q: 'Je nadert een kruising met een tramspoor waar dit bord staat. Er komt een tram van links. Wie gaat eerst?',
+    o: ['De tram, want die heeft voorrang ook als hij van links komt', 'Jij, want je komt van rechts', 'Wie het eerst op het kruispunt is', 'De tram alleen als hij belt'],
+    a: 0, heavy: true, fb: 'Een tram heeft voorrang op alle andere weggebruikers, ongeacht uit welke richting hij komt. Hij kan ook niet uitwijken.' },
+
+  { l: 'm04', sign: 'A27', q: 'In de schemering ziet u dit bord en springt er een ree de weg over. Wat doet u?',
+    o: ['Stevig remmen in uw eigen rijstrook en rekening houden met meer dieren', 'Uitwijken naar de andere rijstrook', 'Versnellen om er voorbij te zijn', 'Toeteren en doorrijden'],
+    a: 0, heavy: true, fb: 'Wild loopt zelden alleen. Uitwijken brengt je in de baan van een tegenligger of in de gracht; remmen in je eigen strook blijft de veiligste keuze.' },
+
+  { l: 'm04', sign: 'A7a', q: 'Na dit bord versmalt de rijbaan aan beide kanten. Wie moet er wijken?',
+    o: ['Dat regelt het bord niet; zonder B19 of B21 los je het hoffelijk op', 'Wie van rechts komt', 'De tegenligger, altijd', 'De zwaarste wagen'],
+    a: 0, fb: 'A7a waarschuwt alleen. Pas de borden B19 en B21 wijzen aan wie voorrang verleent en wie voorrang heeft.' },
+
+  { l: 'm04', sign: 'A50', q: 'Op de autosnelweg ziet u dit bord en verderop staat het verkeer inderdaad stil. Wat doet u eerst?',
+    o: ['Uw waarschuwingsknipperlichten aanzetten zodat wie achter u rijdt het ziet', 'Uw mistlichten aanzetten', 'Naar de pechstrook uitwijken', 'Achteruitrijden naar de vorige afrit'],
+    a: 0, fb: 'Het einde van een file is de gevaarlijkste plek van de snelweg. Wie achter je komt, moet zo vroeg mogelijk zien dat er iets aan de hand is.' },
+
+  /* ================= les 05: voorrangsborden, reeks B ================= */
+
+  { l: 'm05', sign: 'B1', q: 'Je nadert een kruispunt met dit bord. Je ziet van beide kanten ver genoeg en er komt niemand. Moet je stoppen?',
+    o: ['Nee, voorrang verlenen volstaat; stoppen hoeft niet als de weg vrij is', 'Ja, altijd volledig stilstaan', 'Ja, tenzij je knipperlicht aanstaat', 'Nee, en je mag zelfs zonder te kijken doorrijden'],
+    a: 0, fb: 'B1 vraagt voorrang verlenen. Alleen B5 verplicht je om echt stil te staan.' },
+
+  { l: 'm05', sign: 'B5', q: 'Het is vier uur &#8217;s nachts, het kruispunt is verlaten en je ziet honderden meters ver. Moet je hier stilstaan?',
+    o: ['Ja, bij een stopbord sta je altijd volledig stil', 'Nee, als het vrij is mag je doorrollen', 'Nee, &#8217;s nachts geldt het niet', 'Alleen als er camera&#8217;s hangen'],
+    a: 0, heavy: true, fb: 'Stop betekent stilstand van de wielen, hoe leeg het kruispunt ook is. Traag doorrollen is een zware fout.' },
+
+  { l: 'm05', sign: 'B5', q: 'Bij dit bord is de stopstreep op het wegdek helemaal versleten. Waar sta je stil?',
+    o: ['Vlak voor het kruispunt, op de plaats waar je zicht hebt op de dwarsweg', 'Waar de streep vroeger lag, dat schat je zelf in', 'Ter hoogte van het bord', 'Tien meter voor het kruispunt'],
+    a: 0, fb: 'De streep is een hulpmiddel. Is ze er niet, dan stop je waar stoppen zin heeft: waar je de kruisende weg kunt inkijken.' },
+
+  { l: 'm05', sign: 'B3', q: 'Je ziet dit bord langs een weg buiten de bebouwde kom. Wat moet je hier doen?',
+    o: ['Niets bijzonders; op 150 m verder moet je voorrang verlenen', 'Meteen voorrang verlenen', 'Meteen stoppen', 'Je snelheid tot 50 km/u beperken'],
+    a: 0, fb: 'Dit is een aankondiging. Het eigenlijke B1 staat verderop aan het kruispunt.' },
+
+  { l: 'm05', sign: 'B9', q: 'Je rijdt op een weg met dit bord. Van rechts komt een auto uit een zijstraat. Wie gaat eerst?',
+    o: ['Jij, want je rijdt op een voorrangsweg', 'De auto van rechts', 'Wie het eerst op het kruispunt is', 'Je moet allebei stoppen'],
+    a: 0, fb: 'De oranje ruit zegt dat jouw weg voorrang heeft op alle zijwegen, ook op die van rechts.' },
+
+  { l: 'm05', sign: 'B11', q: 'Je rijdt al kilometers op een voorrangsweg en ziet dan dit bord. Van rechts nadert een bestelwagen. Wie gaat eerst?',
+    o: ['De bestelwagen, want vanaf hier geldt weer de voorrang van rechts', 'Jij, je voorrang loopt door tot het volgende kruispunt', 'Wie het eerst aankomt', 'Jij, want je reed er al'],
+    a: 0, heavy: true, fb: 'De doorstreepte ruit maakt een einde aan je voorrang. Vanaf dat bord gelden de gewone regels weer.' },
+
+  { l: 'm05', sign: 'B17', q: 'Je rijdt op een voorrangsweg en ziet dit bord voor een kruispunt. Wat gebeurt er?',
+    o: ['Op dat ene kruispunt verlies je je voorrang: daar geldt voorrang van rechts', 'Je voorrangsweg eindigt definitief', 'Je moet er stoppen', 'Het kruispunt is een rotonde'],
+    a: 0, heavy: true, fb: 'Dit bord kondigt een uitzondering aan op je voorrangsweg, voor dat kruispunt alleen.' },
+
+  { l: 'm05', sign: 'B19', q: 'Voor een versmalling staat dit bord met de rode pijl aan jouw kant. Er komt een tegenligger. Wat doe je?',
+    o: ['Je wacht en laat de tegenligger eerst passeren', 'Je rijdt door, want jij bent er het eerst', 'Je rijdt half in de berm en kruist toch', 'Je toetert en rijdt door'],
+    a: 0, heavy: true, fb: 'De rode pijl wijst jouw richting aan als de richting die moet wijken.' },
+
+  { l: 'm05', sign: 'B21', q: 'Bij een versmalling staat dit bord aan jouw kant. Een tegenligger rijdt toch door. Wat doe je?',
+    o: ['Je laat hem gaan, ook al heb je voorrang', 'Je rijdt door, want je hebt voorrang', 'Je gaat pal in het midden staan', 'Je toetert en versnelt'],
+    a: 0, fb: 'Voorrang hebben is geen recht om een aanrijding te veroorzaken. Je mag je voorrang nooit afdwingen.' },
+
+  { l: 'm05', sign: 'B22', q: 'Je staat aan een rood licht. Rechts van je staat een fietser bij dit bord en die slaat rechtsaf door het rood. Mag dat?',
+    o: ['Ja, het bord laat dat toe, op voorwaarde dat hij voorrang verleent', 'Nee, rood is rood voor iedereen', 'Ja, maar alleen als er geen voetgangers zijn', 'Ja, en hij heeft dan voorrang op iedereen'],
+    a: 0, fb: 'B22 laat fietsers rechtsaf rijden bij rood. Ze krijgen daardoor geen voorrang: ze moeten die net verlenen.' },
+
+  { l: 'm05', sign: 'B23', q: 'Aan een rood licht met dit bord rijdt een fietser rechtdoor. Wat betekent dat voor jou als je rechtsaf wil bij groen?',
+    o: ['Je moet uitkijken: hij mag daar rechtdoor en kruist jouw pad', 'Hij begaat een overtreding, dus je rijdt door', 'Hij moet altijd wachten tot jij weg bent', 'Het bord geldt alleen voor bromfietsen'],
+    a: 0, heavy: true, fb: 'B23 laat fietsers rechtdoor rijden bij rood. Wie rechtsaf slaat, kruist daar precies hun lijn.' },
+
+  { l: 'm05', q: 'Op een kruispunt zonder borden of lichten komt van rechts een auto het tankstation uit gereden. Wie gaat eerst?',
+    o: ['Jij, want wie van een tankstation komt heeft geen voorrang van rechts', 'De auto van rechts', 'Wie het eerst op het kruispunt is', 'Je moet allebei stoppen'],
+    a: 0, fb: 'De voorrang van rechts geldt tussen wegen. Wie van een parking, tankstation of oprit komt, voegt in en verleent voorrang.' },
+
+  { l: 'm05', q: 'Je rijdt op een voorrangsweg en wil keren. Terwijl je die manoeuvre uitvoert, nadert er verkeer. Wie heeft voorrang?',
+    o: ['De anderen: wie een manoeuvre uitvoert, verleent voorrang aan iedereen', 'Jij, want je rijdt op een voorrangsweg', 'Wie van rechts komt', 'Niemand, wie er het eerst is'],
+    a: 0, heavy: true, fb: 'Keren, achteruitrijden of van rijstrook veranderen is een manoeuvre. Je voorrangsweg beschermt je daarbij niet.' },
+
+  { l: 'm05', q: 'Binnen de bebouwde kom geeft een lijnbus zijn richtingaanwijzer aan om van de halte te vertrekken. Wat doe je?',
+    o: ['Je vertraagt en laat hem invoegen', 'Je rijdt door, hij moet wachten', 'Je toetert kort en rijdt door', 'Je stopt volledig en wacht tot hij helemaal weg is'],
+    a: 0, fb: 'Binnen de bebouwde kom moet je een bus die van zijn halte vertrekt en zijn richtingaanwijzer gebruikt, laten invoegen.' },
+
+  { l: 'm05', sign: 'B1', q: 'Bij dit bord kruis je eerst een fietspad en dan pas de rijbaan. Een fietser nadert op dat pad. Wat doe je?',
+    o: ['Je verleent hem voorrang voor je het fietspad oprijdt', 'Je rijdt tot op het fietspad en wacht daar', 'Je rijdt door, het bord geldt enkel voor de rijbaan', 'Je toetert zodat hij remt'],
+    a: 0, heavy: true, fb: 'Het fietspad hoort bij het kruispunt. Stilstaan op een fietspad is bovendien nooit toegelaten.' },
+
+  { l: 'm05', sign: 'B5', q: 'Je bent netjes gestopt aan het stopbord en wil optrekken. Van rechts nadert een auto die nog een eind weg is. Wat doe je?',
+    o: ['Je wacht, want na het stoppen moet je nog altijd voorrang verlenen', 'Je rijdt op, je hebt immers gestopt', 'Je rijdt op als je er voor hem bent', 'Je knippert met je lichten en rijdt op'],
+    a: 0, heavy: true, fb: 'Stoppen en voorrang verlenen zijn twee verplichtingen. Aan de eerste voldoen ontslaat je niet van de tweede.' },
+
+  { l: 'm05', q: 'Een politieagent regelt het verkeer op een kruispunt waar het licht op groen staat voor jou. Hij steekt zijn arm naar je op. Wat doe je?',
+    o: ['Je stopt, de agent gaat voor op het verkeerslicht', 'Je rijdt door, groen is groen', 'Je rijdt traag verder tot hij plaats maakt', 'Je wacht tot het licht op rood springt'],
+    a: 0, heavy: true, fb: 'De bevoegde persoon staat bovenaan in de rangorde, boven lichten, borden en markeringen.' },
+
+  { l: 'm05', sign: 'B9,B11', q: 'Wat is het verschil tussen deze twee borden?',
+    o: ['Het eerste opent een voorrangsweg, het tweede sluit hem af', 'Het eerste geldt binnen, het tweede buiten de bebouwde kom', 'Het eerste is voor auto&#8217;s, het tweede voor vrachtwagens', 'Ze betekenen hetzelfde, alleen de kleur verschilt'],
+    a: 0, fb: 'De zwarte balk over de ruit is het einde. Daarna gelden de gewone voorrangsregels weer.' },
+
+  { l: 'm05', sign: 'B1,B5', q: 'Waarin verschillen deze twee borden van elkaar?',
+    o: ['Bij het eerste moet je voorrang verlenen, bij het tweede altijd volledig stilstaan', 'Het eerste geldt voor fietsers, het tweede voor auto&#8217;s', 'Het eerste geldt overdag, het tweede &#8217;s nachts', 'Er is geen verschil in wat je moet doen'],
+    a: 0, heavy: true, fb: 'Voorrang verlenen kan al rijdend als de weg vrij is. Stoppen betekent dat je wielen stilstaan.' },
+
+  { l: 'm05', q: 'Je nadert een kruispunt van gelijke wegen zonder borden. Van rechts komt een fietser. Wie gaat eerst?',
+    o: ['De fietser, de voorrang van rechts geldt voor alle bestuurders', 'Jij, want een fietser is geen bestuurder', 'Jij, want je auto is zwaarder', 'Wie het eerst aankomt'],
+    a: 0, heavy: true, fb: 'Een fietser is een bestuurder. De voorrang van rechts maakt geen onderscheid naar soort voertuig.' },
+
+  /* ================= les 06: verbodsborden, reeks C ================= */
+
+  { l: 'm06', sign: 'C1', q: 'Onder dit bord hangt een onderbord met "uitgezonderd fietsers". Wat betekent dat voor jou als je de straat uit rijdt?',
+    o: ['Je kunt fietsers recht op je af krijgen en houdt daar rekening mee', 'Fietsers mogen er alleen overdag rijden', 'Er verandert niets voor jou', 'Je mag zelf ook binnenrijden als je traag rijdt'],
+    a: 0, heavy: true, fb: 'Zo&#8217;n eenrichtingsstraat is voor fietsers in twee richtingen open. Je verwacht ze vooral in bochten en aan versmallingen.' },
+
+  { l: 'm06', sign: 'C3', q: 'Wat is het verschil tussen dit bord en het bord verboden richting?',
+    o: ['Dit geldt in beide richtingen, verboden richting alleen aan die kant', 'Dit geldt enkel voor vrachtwagens', 'Dit geldt enkel binnen de bebouwde kom', 'Er is geen verschil'],
+    a: 0, fb: 'De witte schijf met rode rand sluit de straat voor iedereen af, uit welke richting je ook komt.' },
+
+  { l: 'm06', sign: 'C21', q: 'Dit bord geeft 3,5 t aan. Je bestelwagen mag volgens het inschrijvingsbewijs 3,5 t wegen en is nu geladen tot 3,2 t. Mag je erdoor?',
+    o: ['Ja, want er wordt gekeken naar wat je op dat ogenblik werkelijk weegt', 'Nee, want je maximaal toegelaten massa is 3,5 t', 'Nee, bestelwagens mogen er nooit door', 'Ja, maar alleen als je lading vastzit'],
+    a: 0, fb: 'C21 kijkt naar de werkelijke massa op dat moment, lading en inzittenden inbegrepen, niet naar het cijfer op je papieren.' },
+
+  { l: 'm06', sign: 'C31a', q: 'Dit bord staat aan een kruispunt, maar jouw bestemming ligt links. Tot waar geldt het verbod?',
+    o: ['Alleen voor dat eerstvolgende kruispunt; daarna mag je links', 'Voor de hele straat', 'Tot het einde van de bebouwde kom', 'Tot een bord dat het opheft'],
+    a: 0, fb: 'C31a en C31b gelden voor het kruispunt waar ze staan. Een straat verder mag je gewoon links.' },
+
+  { l: 'm06', sign: 'C33', q: 'Je bent je afslag voorbijgereden en ziet dit bord. Wat doe je?',
+    o: ['Doorrijden tot een plaats waar keren wel mag', 'Keren, want je hebt een geldige reden', 'Achteruitrijden tot je afslag', 'Keren in de eerstvolgende oprit'],
+    a: 0, fb: 'Een omweg kost je een paar minuten. Keren waar het verboden is, gebeurt net waar het zicht te kort is.' },
+
+  { l: 'm06', sign: 'C35', q: 'Onder dit bord rijdt een fietser traag voor je. Mag je hem inhalen?',
+    o: ['Ja, dit verbod slaat op gespannen met meer dan twee wielen', 'Nee, het verbod geldt voor alles', 'Alleen als hij op het fietspad rijdt', 'Alleen buiten de bebouwde kom'],
+    a: 0, fb: 'C35 verbiedt het links inhalen van gespannen met meer dan twee wielen. Een fietser, bromfiets of motorfiets mag je er wel voorbij.' },
+
+  { l: 'm06', sign: 'C35', q: 'Onder hetzelfde bord rijdt een tractor met aanhangwagen voor je aan 25 km/u. Mag je erlangs?',
+    o: ['Nee, dat is een gespan met meer dan twee wielen', 'Ja, want hij rijdt te traag', 'Ja, als je binnen 20 seconden terug bent', 'Ja, als er geen tegenligger is'],
+    a: 0, heavy: true, fb: 'Hoe traag de tractor ook rijdt, het verbod blijft. Je wacht tot het bord C37 of tot een plek waar inhalen mag.' },
+
+  { l: 'm06', sign: 'C39', q: 'Je rijdt met je personenauto onder dit bord. Mag je de bestelwagen voor je inhalen?',
+    o: ['Ja, dit verbod geldt alleen voor vrachtwagens', 'Nee, niemand mag daar inhalen', 'Alleen als je sneller dan 90 km/u rijdt', 'Alleen op de linkerrijstrook van een snelweg'],
+    a: 0, fb: 'C39 richt zich tot vrachtwagens. Voor jou blijven de gewone inhaalregels gelden.' },
+
+  { l: 'm06', sign: 'C43', q: 'Op dit bord staat 70. Het regent hard en het zicht is beperkt. Hoe snel mag je rijden?',
+    o: ['Trager dan 70, want je moet je snelheid aan de omstandigheden aanpassen', 'Precies 70, dat is wat het bord zegt', '70, tenzij je ruitenwissers op de hoogste stand staan', '90, want bij regen geldt een uitzondering'],
+    a: 0, heavy: true, fb: 'Een snelheidsbord is een bovengrens, nooit een opdracht. Je moet altijd kunnen stoppen op de afstand die je overziet.' },
+
+  { l: 'm06', sign: 'C43', q: 'Je passeert dit bord met 50 erop. Waar eindigt die beperking?',
+    o: ['Bij een bord C45, een nieuw bord C43, of het volgende kruispunt', 'Na precies een kilometer', 'Bij het einde van de bebouwde kom', 'Ze geldt tot je een bord met een hoger cijfer ziet'],
+    a: 0, fb: 'Plaatselijke verbodsborden lopen tot het volgende kruispunt, tenzij een bord ze eerder opheft of vervangt.' },
+
+  { l: 'm06', sign: 'C45', q: 'Je passeert dit bord buiten de bebouwde kom in Vlaanderen. Hoe snel mag je nu?',
+    o: ['70, de algemene snelheid van die weg', 'Zo snel als veilig is, er is geen grens meer', '90', '120'],
+    a: 0, fb: 'Het einde van een plaatselijke beperking brengt je terug naar de algemene snelheid van die weg, niet naar vrijheid.' },
+
+  { l: 'm06', sign: 'C46', q: 'Je rijdt door een dorp waar achtereenvolgens een inhaalverbod en een snelheidsbeperking golden. Dan zie je dit bord. Wat gebeurt er?',
+    o: ['Alle plaatselijke verbodsbepalingen vervallen samen', 'Alleen het inhaalverbod vervalt', 'Alleen de snelheidsbeperking vervalt', 'Er verandert niets, het is een informatiebord'],
+    a: 0, fb: 'Dit bord veegt in een keer alle plaatselijke verboden weg die je onderweg opliep.' },
+
+  { l: 'm06', sign: 'C11', q: 'Je fietst met je kind door een straat met dit bord. Wat betekent dat?',
+    o: ['Jullie mogen er niet met de fiets in', 'Alleen volwassenen mogen er fietsen', 'Jullie mogen er fietsen als je afstapt', 'Het geldt alleen voor elektrische fietsen'],
+    a: 0, fb: 'De rode schijf met het fietssymbool sluit fietsers uit. Te voet met de fiets aan de hand ben je voetganger en mag je wel door.' },
+
+  { l: 'm06', sign: 'C5', q: 'Dit bord staat aan het begin van een straat waar je een pakje moet leveren. Mag je erin?',
+    o: ['Nee, tenzij een onderbord een uitzondering maakt voor bestemmingsverkeer', 'Ja, want je hebt een bestemming in de straat', 'Ja, als je je waarschuwingsknipperlichten aanzet', 'Ja, als je er minder dan tien minuten blijft'],
+    a: 0, fb: 'Een bestemming in de straat is op zich geen uitzondering. Die moet op een onderbord staan.' },
+
+  { l: 'm06', sign: 'C24', q: 'Je rijdt met je personenauto en ziet dit bord. Geldt het voor jou?',
+    o: ['Nee, het geldt voor voertuigen die gevaarlijke goederen vervoeren', 'Ja, het geldt voor alle voertuigen', 'Ja, als je jerrycans met benzine meeneemt', 'Nee, het geldt alleen voor tankwagens'],
+    a: 0, fb: 'Dit bord richt zich tot het vervoer van gevaarlijke goederen zoals dat wettelijk omschreven is, niet tot een reservejerrycan.' },
+
+  { l: 'm06', sign: 'C23', q: 'Dit bord staat aan een dorpskern. Je rijdt met een personenauto en een aanhangwagen. Mag je erdoor?',
+    o: ['Ja, het bord richt zich tot vrachtwagens', 'Nee, met een aanhangwagen tel je als vrachtwagen', 'Alleen als je aanhangwagen leeg is', 'Alleen buiten de spitsuren'],
+    a: 0, fb: 'Het pictogram is een vrachtwagen. Een personenauto met aanhangwagen blijft een personenauto.' },
+
+  { l: 'm06', sign: 'C47', q: 'Je nadert dit bord op een buitenlandse autosnelweg. Wat verwacht je?',
+    o: ['Een tolpost waar je moet stoppen of vertragen om te betalen', 'Een controlepost van de politie', 'Een weegbrug voor vrachtwagens', 'Een grensovergang met paspoortcontrole'],
+    a: 0, fb: 'Het bord kondigt een tolpost aan. Je snelheid moet ruim op tijd omlaag.' },
+
+  { l: 'm06', sign: 'C7', q: 'Dit bord staat aan een natuurgebied. Je rijdt met je motorfiets. Mag je erin?',
+    o: ['Nee, het bord sluit motorfietsen uit', 'Ja, als je motor stil genoeg is', 'Ja, als je stapvoets rijdt', 'Ja, motorfietsen vallen nooit onder verbodsborden'],
+    a: 0, fb: 'Elke rode schijf met een pictogram sluit dat soort voertuig uit, ook motorfietsen.' },
+
+  { l: 'm06', sign: 'C37', q: 'Je rijdt al een tijd onder een inhaalverbod en ziet dan dit bord. Wat mag je nu?',
+    o: ['Weer inhalen, als de gewone inhaalregels het toelaten', 'Onmiddellijk inhalen, ongeacht de omstandigheden', 'Sneller rijden', 'Keren'],
+    a: 0, fb: 'Het einde van een verbod geeft je de gewone regels terug, niet meer dan dat. Zicht, markering en tegenliggers blijven tellen.' },
+
+  { l: 'm06', sign: 'C1', q: 'Je wil een korte omweg vermijden en rijdt tien meter achteruit een straat in waar dit bord staat. Mag dat?',
+    o: ['Nee, ook achteruit rijd je die straat in tegen de verboden richting', 'Ja, achteruitrijden is geen rijden in de zin van het bord', 'Ja, als het minder dan twintig meter is', 'Ja, als je waarschuwingsknipperlichten aanstaan'],
+    a: 0, heavy: true, fb: 'De richting waarin je voertuig zich verplaatst telt, niet de kant waarnaar de neus wijst.' }
+
+];
+
+</script>
+<script>
+/* Bordenvragen in situatievorm, deel twee: gebodsborden, parkeerborden
+   en aanwijzingsborden. Zelfde opzet als qborden.js. */
+window.QBORDEN2 = [
+
+  /* ================= les 07: gebodsborden, reeks D ================= */
+
+  { l: 'm07', sign: 'D1a', q: 'Je nadert een kruispunt met dit bord en je gps zegt dat je rechts moet. Wat doe je?',
+    o: ['Rechtdoor rijden en verderop keren of omrijden', 'Rechts afslaan, je gps kent de route', 'Rechts afslaan met je knipperlicht aan', 'Stoppen en achteruit terugrijden'],
+    a: 0, fb: 'Een gebodsbord laat alleen de aangeduide richting toe. Alles wat er niet op staat, mag niet.' },
+
+  { l: 'm07', sign: 'D1c', q: 'Midden op de rijbaan ligt een verkeerseiland met dit bord erop. Langs welke kant rijd je?',
+    o: ['Links van het eiland', 'Rechts van het eiland', 'Langs de kant waar het meeste plaats is', 'Je mag kiezen zolang je knipperlicht aanstaat'],
+    a: 0, fb: 'De pijl wijst naar linksonder: je houdt links aan en passeert het obstakel langs die kant.' },
+
+  { l: 'm07', sign: 'D1d', q: 'Bij werken staat dit bord voor een versmalling. Wat vraagt het van je?',
+    o: ['Rechts aanhouden en het obstakel langs rechts voorbijrijden', 'Rechtsaf slaan op het kruispunt', 'Rechts inhalen', 'Rechts parkeren'],
+    a: 0, fb: 'Deze pijl wijst schuin naar beneden: het gaat om aanhouden langs die kant, niet om afslaan.' },
+
+  { l: 'm07', sign: 'D3a', q: 'Dit bord staat aan een kruispunt. Jouw bestemming ligt rechts. Wat doe je?',
+    o: ['Rechtdoor of links rijden en verderop omkeren', 'Rechts afslaan, want twee pijlen betekent vrije keuze', 'Rechts afslaan als er niemand aankomt', 'Rechtdoor rijden en op het volgende kruispunt keren is verboden'],
+    a: 0, fb: 'Twee toegelaten richtingen betekent: die twee en geen andere.' },
+
+  { l: 'm07', sign: 'D5', q: 'Je nadert een rotonde met dit bord en daarnaast staat een bord B1. Wie heeft voorrang?',
+    o: ['Het verkeer dat al op de rotonde rijdt', 'Jij, want je komt van rechts', 'Wie het eerst op de rotonde is', 'Het verkeer dat de rotonde verlaat'],
+    a: 0, heavy: true, fb: 'D5 zegt niets over voorrang. Het is het bord B1 ernaast dat je verplicht voorrang te verlenen aan wie er al rijdt.' },
+
+  { l: 'm07', sign: 'D5', q: 'Je nadert een kleine rotonde met dit bord, maar er staat geen bord B1. Wie heeft dan voorrang?',
+    o: ['Wie van rechts komt, dus wie de rotonde oprijdt', 'Het verkeer op de rotonde, altijd', 'Jij, want je rijdt rechtdoor', 'Niemand, wie het eerst is'],
+    a: 0, heavy: true, fb: 'Zonder B1 gelden de gewone regels, en dat is de voorrang van rechts. Op zo&#8217;n rotonde moet wie er al rijdt dus wijken.' },
+
+  { l: 'm07', sign: 'D7', q: 'Langs de rijbaan ligt een fietspad met dit bord. Er is file en het fietspad is vrij. Mag je erop?',
+    o: ['Nee, je mag er niet rijden, niet stilstaan en niet parkeren', 'Ja, als je stapvoets rijdt', 'Ja, als er geen fietsers zijn', 'Ja, om de file voorbij te steken'],
+    a: 0, heavy: true, fb: 'Het bord maakt het pad verplicht voor fietsers en verboden voor jou. Ook even stilstaan mag er niet.' },
+
+  { l: 'm07', sign: 'D7', q: 'Je moet een oprit bereiken die aan de overkant van zo&#8217;n fietspad ligt. Mag je het kruisen?',
+    o: ['Ja, kruisen mag, met voorrang aan de fietsers', 'Nee, nooit', 'Ja, en de fietsers moeten je doorlaten', 'Alleen als je waarschuwingsknipperlichten aanstaan'],
+    a: 0, fb: 'Een fietspad kruisen om een zijweg of een eigendom te bereiken mag. Erop rijden of blijven staan mag niet.' },
+
+  { l: 'm07', sign: 'D9a', q: 'Je wandelt met de hond op een pad met dit bord. Waar loop je?',
+    o: ['Aan de kant met het voetgangerssymbool, want het pad is opgesplitst', 'Waar je wil, het pad is gedeeld', 'Aan de kant met het fietssymbool', 'Op de rijbaan, want het pad is voor fietsers'],
+    a: 0, fb: 'De streep in het midden splitst het pad. Iedereen blijft aan zijn eigen kant.' },
+
+  { l: 'm07', sign: 'D10', q: 'Je fietst op een pad met dit bord en er wandelen mensen over de volle breedte. Wat doe je?',
+    o: ['Je past je snelheid aan, want fietsers en voetgangers delen hier dezelfde ruimte', 'Je belt tot ze opzij gaan, ze horen links te lopen', 'Je rijdt op de rijbaan verder', 'Je rijdt er stevig door, zij moeten uitwijken'],
+    a: 0, fb: 'Bij D10 is er geen scheiding. Wie het snelst gaat, past zich aan.' },
+
+  { l: 'm07', sign: 'D11', q: 'Je zoekt een sluipweg en ziet een verhard pad met dit bord. Mag je er met de auto door?',
+    o: ['Nee, dit pad is voorbehouden aan voetgangers', 'Ja, als je stapvoets rijdt', 'Ja, als er geen voetgangers zijn', 'Ja, buiten de spitsuren'],
+    a: 0, fb: 'Een blauw rond bord met een voetgangerssymbool wijst een weg aan die voor voetgangers verplicht en voor jou verboden is.' },
+
+  { l: 'm07', sign: 'D13', q: 'Naast de rijbaan ligt een pad met dit bord waarop een ruiter rijdt. Wat betekent dat voor jou?',
+    o: ['Het pad is voor ruiters bestemd en jij blijft op de rijbaan', 'Ruiters moeten wijken voor auto&#8217;s', 'Je mag er in noodgevallen op', 'Het pad is ook een fietspad'],
+    a: 0, fb: 'Elk blauw rond bord wijst een weg toe aan een bepaalde groep. Hier zijn dat ruiters.' },
+
+  { l: 'm07', sign: 'D1e', q: 'Dit bord staat aan een kruispunt waar je eigenlijk rechtdoor wil. Wat doe je?',
+    o: ['Links afslaan en verderop omrijden', 'Rechtdoor rijden, het bord is een advies', 'Rechtdoor rijden als er geen verkeer is', 'Keren voor het kruispunt'],
+    a: 0, fb: 'Verplicht linksaf betekent dat rechtdoor rijden een overtreding is, ook op een leeg kruispunt.' },
+
+  { l: 'm07', sign: 'D1b', q: 'Dit bord staat op een middeneiland aan het begin van een straat. Wat doe je?',
+    o: ['Je volgt de pijl naar rechts', 'Je mag kiezen', 'Je rijdt rechtdoor als je knipperlicht aanstaat', 'Je keert'],
+    a: 0, fb: 'Een blauwe schijf met een pijl legt de richting op die de pijl aangeeft.' },
+
+  { l: 'm07', sign: 'D7', q: 'Een fietser rijdt op de rijbaan terwijl er een goed berijdbaar fietspad met dit bord naast ligt. Wat klopt?',
+    o: ['Hij hoort het fietspad te gebruiken, maar jij moet hem toch veilig voorbijsteken', 'Jij mag hem van de rijbaan toeteren', 'Hij mag zelf kiezen waar hij rijdt', 'Jij mag hem rakelings voorbijrijden om je punt te maken'],
+    a: 0, heavy: true, fb: 'Zijn overtreding geeft jou geen enkel recht. De zijdelingse afstand van 1 m binnen en 1,5 m buiten de bebouwde kom blijft gelden.' },
+
+  { l: 'm07', sign: 'D5', q: 'Je verlaat een rotonde. Wat doe je met je richtingaanwijzer?',
+    o: ['Je geeft rechts aan voor je de rotonde verlaat', 'Je geeft links aan zolang je op de rotonde rijdt', 'Je gebruikt hem niet, op een rotonde is dat niet nodig', 'Je geeft rechts aan bij het oprijden'],
+    a: 0, fb: 'Je kondigt je vertrek van de rotonde aan met rechts, zodat wie wil oprijden weet dat de baan vrijkomt.' },
+
+  /* ================= les 08: stilstaan en parkeren, reeks E ================= */
+
+  { l: 'm08', sign: 'E1', q: 'Je stopt onder dit bord om je zus te laten uitstappen. Ze doet er drie minuten over omdat ze haar tas zoekt. Overtreding?',
+    o: ['Nee, dat is stilstaan en dit bord verbiedt enkel parkeren', 'Ja, onder dit bord mag je helemaal niet stoppen', 'Ja, want langer dan een minuut is parkeren', 'Nee, maar alleen als je knipperlichten aanstaan'],
+    a: 0, fb: 'Stilstaan is stoppen om iemand te laten in- of uitstappen of om te laden, en niet langer dan daarvoor nodig is.' },
+
+  { l: 'm08', sign: 'E1', q: 'Onder hetzelfde bord wacht je met draaiende motor tot je vriendin uit de winkel terugkomt. Dat duurt zeven minuten. Overtreding?',
+    o: ['Ja, wachten op iemand is parkeren en dat is hier verboden', 'Nee, je bent in de auto blijven zitten', 'Nee, de motor draaide', 'Nee, zolang het onder de tien minuten blijft'],
+    a: 0, fb: 'Of je in de auto zit doet niet ter zake. Wachten tot er iemand terugkomt is parkeren.' },
+
+  { l: 'm08', sign: 'E3', q: 'Je wil iemand snel laten uitstappen onder dit bord. Mag dat?',
+    o: ['Nee, dit bord verbiedt ook stilstaan', 'Ja, uitstappen is altijd toegelaten', 'Ja, als het minder dan een minuut duurt', 'Ja, met je waarschuwingsknipperlichten aan'],
+    a: 0, heavy: true, fb: 'Het rode kruis verbiedt stilstaan en parkeren allebei. Je mag er niet eens even halt houden.' },
+
+  { l: 'm08', sign: 'E5', q: 'Het is de tiende van de maand. Aan jouw kant van de straat staat dit bord. Mag je er parkeren?',
+    o: ['Nee, van de 1e tot de 15e mag je aan die kant niet parkeren', 'Ja, tot de 15e mag je er wel staan', 'Ja, als je een parkeerschijf legt', 'Alleen tussen 9 en 17 uur'],
+    a: 0, fb: 'Bij E5 verhuis je op de 16e naar de overkant. Dit systeem verdwijnt met de nieuwe Code op 1 juni 2027.' },
+
+  { l: 'm08', sign: 'E7', q: 'Het is de twintigste van de maand en aan jouw kant staat dit bord. Wat doe je?',
+    o: ['Je parkeert aan de overkant, want hier mag het van de 16e tot het einde niet', 'Je parkeert hier, het bord geldt tot de 15e', 'Je parkeert hier met parkeerschijf', 'Je mag hier de hele maand staan'],
+    a: 0, fb: 'E7 is de tegenhanger van E5: verbod in de tweede helft van de maand.' },
+
+  { l: 'm08', sign: 'E11', q: 'Dit bord staat aan de rand van een stadje. Wat legt het op?',
+    o: ['Beurtelings parkeren in de hele bebouwde kom, naargelang de dag van de maand', 'Parkeerverbod in de hele bebouwde kom', 'Een blauwe zone in de hele bebouwde kom', 'Betalend parkeren in het hele centrum'],
+    a: 0, fb: 'Dit bord verlengt de regel van E5 en E7 over alle straten van de kom, tot een bord die opheft.' },
+
+  { l: 'm08', sign: 'E9a', q: 'Onder dit bord hangt een onderbord met het parkeerschijfsymbool. Je komt aan om 14.10 uur. Waarop zet je de schijf?',
+    o: ['Op 14.30 uur, het streepje na je aankomstuur', 'Op 14.10 uur, je werkelijke aankomst', 'Op 14.00 uur, het streepje ervoor', 'Op 16.10 uur, je vertrekuur'],
+    a: 0, fb: 'Je zet de pijl op het eerstvolgende streepje na je aankomst, en de schijf ligt zichtbaar achter je voorruit.' },
+
+  { l: 'm08', sign: 'E9d', q: 'Je zoekt een plaats voor je personenauto en vindt een rij vakken met dit bord. Mag je er staan?',
+    o: ['Nee, deze plaatsen zijn voorbehouden aan autocars', 'Ja, iedereen mag er staan', 'Ja, buiten de schooluren', 'Ja, met een parkeerschijf'],
+    a: 0, fb: 'Kijk naar het voertuig op het bord: E9b is de personenauto, E9c de vrachtwagen, E9d de autocar, E9h de kampeerauto en E9i de motorfiets.' },
+
+  { l: 'm08', sign: 'E9h', q: 'Je rijdt met een personenauto en ziet een vrije plaats met dit bord. Mag je er staan?',
+    o: ['Nee, deze plaats is voor kampeerauto&#8217;s', 'Ja, kampeerauto&#8217;s komen er toch nooit', 'Ja, als je binnen het uur weg bent', 'Ja, met een parkeerschijf'],
+    a: 0, fb: 'Een voorbehouden plaats blijft voorbehouden, ook als ze leeg staat.' },
+
+  { l: 'm08', sign: 'E9i', q: 'Dit bord staat bij een smal vak naast het trottoir. Voor wie is die plaats?',
+    o: ['Voor motorfietsen', 'Voor personen met een handicap', 'Voor personenauto&#8217;s', 'Voor kampeerauto&#8217;s'],
+    a: 0, fb: 'Het pictogram is een motorfiets. De plaats voor personen met een handicap is bord E9a met het rolstoelsymbool.' },
+
+  { l: 'm08', sign: 'E9a', q: 'Je parkeert drie minuten op een plaats met dit bord en het rolstoelsymbool, zonder parkeerkaart. Wat riskeer je?',
+    o: ['Een overtreding van de derde graad, de duur speelt geen rol', 'Niets, drie minuten is stilstaan', 'Een waarschuwing', 'Een overtreding van de eerste graad'],
+    a: 0, heavy: true, fb: 'Zonder geldige kaart achter je voorruit is dat altijd een derdegraadsovertreding, hoe kort ook.' },
+
+  { l: 'm08', sign: 'E9e', q: 'Dit bord staat langs een smalle straat. Waar zet je je auto?',
+    o: ['Volledig op de berm of het trottoir', 'Gedeeltelijk op de berm, twee wielen op de rijbaan', 'Volledig op de rijbaan', 'Schuin in het parkeervak'],
+    a: 0, fb: 'Het voertuig op het bord staat helemaal boven de stoeprand. Bij E9f staat het er half op.' },
+
+  { l: 'm08', sign: 'E9f', q: 'Wat legt dit bord je op?',
+    o: ['Gedeeltelijk op de berm of het trottoir staan: twee wielen erop, twee erop de rijbaan', 'Volledig op het trottoir staan', 'Volledig op de rijbaan staan', 'Haaks parkeren'],
+    a: 0, fb: 'De helft van het voertuig staat boven de rand. Zonder zo&#8217;n bord mag je binnen de bebouwde kom niet op het trottoir.' },
+
+  { l: 'm08', sign: 'E9g', q: 'In een straat met een brede berm staat dit bord. Waar moet je staan?',
+    o: ['Volledig op de rijbaan', 'Volledig op de berm', 'Half op de berm', 'Op het trottoir'],
+    a: 0, fb: 'Soms moet de berm vrij blijven, bijvoorbeeld voor voetgangers of voor de riolering. Dan stuurt dit bord je terug naar de rijbaan.' },
+
+  { l: 'm08', q: 'In een straat binnen de bebouwde kom staat geen enkel parkeerbord. Mag je twee wielen op het trottoir zetten?',
+    o: ['Nee, zonder bord E9e of E9f blijft het trottoir verboden', 'Ja, zolang er genoeg plaats overblijft voor voetgangers', 'Ja, als de straat smal is', 'Ja, buiten de schooluren'],
+    a: 0, heavy: true, fb: 'Op het trottoir staan mag alleen waar een bord het uitdrukkelijk oplegt of toelaat.' },
+
+  { l: 'm08', sign: 'E1', q: 'Je passeert dit bord en rijdt daarna een kruispunt over. Geldt het verbod nog?',
+    o: ['Nee, het verbod loopt tot het volgende kruispunt', 'Ja, tot een bord dat het opheft', 'Ja, tot het einde van de bebouwde kom', 'Ja, over de hele straat'],
+    a: 0, fb: 'Plaatselijke verbodsborden houden op aan het eerstvolgende kruispunt, tenzij een onderbord iets anders zegt.' },
+
+  { l: 'm08', sign: 'E1', q: 'Onder dit bord hangt een onderbord met een pijl die naar rechts wijst, in je rijrichting. Wat betekent dat?',
+    o: ['Het verbod begint hier en geldt verder in die richting', 'Het verbod geldt alleen achter je', 'Het verbod geldt alleen aan de overkant', 'Het verbod geldt alleen voor wie rechts afslaat'],
+    a: 0, fb: 'Een pijl in je rijrichting duidt het begin aan, een pijl in de andere richting het einde, en een dubbele pijl de strook ertussen.' },
+
+  { l: 'm08', q: 'Je zet je waarschuwingsknipperlichten aan en parkeert onder een parkeerverbod om snel iets af te geven. Wat is je situatie?',
+    o: ['Je staat er fout: knipperlichten heffen geen enkel verbod op', 'Je staat er goed zolang de lichten branden', 'Je staat er goed als je onder de vijf minuten blijft', 'Je staat er goed als je in de auto blijft zitten'],
+    a: 0, fb: 'Waarschuwingsknipperlichten waarschuwen. Ze geven je geen recht om ergens te staan.' },
+
+  /* ================= les 09: aanwijzingsborden, reeks F ================= */
+
+  { l: 'm09', sign: 'F1', q: 'Je passeert dit bord op een weg waar je 90 mocht rijden. Vanaf waar geldt 50?',
+    o: ['Vanaf het bord zelf', 'Vanaf het eerste huis', 'Vanaf het eerste kruispunt', 'Vanaf het bord met de plaatsnaam in het midden van het dorp'],
+    a: 0, heavy: true, fb: 'Het plaatsnaambord is meteen ook het snelheidsbord. Je bent dus al voor het bord aan het afremmen.' },
+
+  { l: 'm09', sign: 'F3', q: 'Je verlaat een dorp in Vlaanderen via dit bord. Hoe snel mag je daarna?',
+    o: ['70 km/u, tenzij een bord iets anders zegt', '90 km/u', '50 km/u tot het volgende kruispunt', 'Zo snel als veilig is'],
+    a: 0, fb: 'Buiten de bebouwde kom geldt in Vlaanderen 70, in Walloni&euml; 90 en in Brussel 70.' },
+
+  { l: 'm09', sign: 'F4a', q: 'Je rijdt dit bord voorbij. Tot waar geldt de 30?',
+    o: ['Tot het bord einde zone 30, ongeacht hoeveel kruispunten je passeert', 'Tot het volgende kruispunt', 'Tot het volgende snelheidsbord', 'Over precies 500 meter'],
+    a: 0, fb: 'Een zonebord werkt anders dan een gewoon bord: het geldt over een heel gebied en stopt pas bij het einde-zonebord.' },
+
+  { l: 'm09', sign: 'F12a', q: 'Je rijdt een woonerf binnen met dit bord. Wat geldt daar?',
+    o: ['Maximaal 20 km/u en voetgangers mogen de volle breedte gebruiken', 'Maximaal 30 km/u en voetgangers blijven op het trottoir', 'Maximaal 50 km/u', 'Maximaal 20 km/u maar alleen voor fietsers'],
+    a: 0, heavy: true, fb: 'In een woonerf deelt iedereen de ruimte. Kinderen mogen er spelen en jij bent er te gast.' },
+
+  { l: 'm09', sign: 'F5', q: 'Je rijdt deze weg op met een bromfiets klasse B. Mag dat?',
+    o: ['Nee, op de autosnelweg zijn enkel motorfietsen toegelaten', 'Ja, als je 70 km/u haalt', 'Ja, op de pechstrook', 'Ja, buiten de spits'],
+    a: 0, heavy: true, fb: 'Op de autosnelweg geldt een minimum van 70 km/u en zijn bromfietsen niet toegelaten. Enkel motorfietsen mogen erop.' },
+
+  { l: 'm09', sign: 'F9', q: 'Wat is het belangrijkste verschil tussen deze weg en een autosnelweg?',
+    o: ['Hier kunnen gelijkgrondse kruispunten voorkomen en er is meestal geen pechstrook', 'Hier mag je sneller rijden', 'Hier mogen fietsers rijden', 'Hier mag je keren'],
+    a: 0, fb: 'Een autoweg lijkt op een snelweg maar mist de scheiding van alle kruisend verkeer en vaak ook de pechstrook.' },
+
+  { l: 'm09', sign: 'F5', q: 'Je merkt onderweg dat je je afrit voorbij bent gereden. Wat doe je?',
+    o: ['Doorrijden tot de volgende afrit', 'Achteruitrijden op de pechstrook', 'Keren op een dienstweg', 'Stoppen op de pechstrook en wachten tot het rustig is'],
+    a: 0, heavy: true, fb: 'Keren en achteruitrijden zijn op de autosnelweg altijd verboden. Ook op de pechstrook.' },
+
+  { l: 'm09', sign: 'F13', q: 'Dit bord staat boven de rijbaan voor een kruispunt. Waarvoor dient het?',
+    o: ['Het toont welke rijstrook naar welke richting leidt', 'Het geeft het aantal rijstroken aan', 'Het kondigt een versmalling aan', 'Het verbiedt van rijstrook te veranderen'],
+    a: 0, fb: 'Kies je strook ruim op tijd. Op het laatste moment van strook wisselen is precies waar het misgaat.' },
+
+  { l: 'm09', sign: 'F17', q: 'Je rijdt in de spits en ziet dit bord boven een vrije strook. Mag je erop?',
+    o: ['Nee, die strook is voorbehouden aan bussen', 'Ja, als er geen bus in zicht is', 'Ja, om een file voorbij te rijden', 'Ja, als je rechts afslaat op het volgende kruispunt'],
+    a: 0, fb: 'Een busstrook blijft vrij, ook als er even geen bus rijdt. Daar is ze net voor.' },
+
+  { l: 'm09', sign: 'F19', q: 'Je rijdt een straat in met dit bord. Wat mag je verwachten?',
+    o: ['Geen tegenliggers, maar wel fietsers als een onderbord dat toelaat', 'Geen enkel verkeer van voren', 'Tegenliggers op de linkerhelft', 'Dat je overal mag parkeren'],
+    a: 0, fb: 'Veel eenrichtingsstraten zijn in de tegenrichting opengesteld voor fietsers. Dat staat op een onderbord.' },
+
+  { l: 'm09', sign: 'F45', q: 'Je ziet dit bord aan het begin van een straat. Wat betekent het voor je route?',
+    o: ['De straat loopt dood, je zult moeten terugkeren', 'De straat is afgesloten voor alle verkeer', 'De straat is enkel voor bestemmingsverkeer', 'De straat eindigt op een rotonde'],
+    a: 0, fb: 'De rode dwarsbalk toont waar de weg ophoudt. Soms is er voor fietsers en voetgangers wel een doorsteek.' },
+
+  { l: 'm09', sign: 'F49', q: 'Dit bord staat bij een zebrapad. Een voetganger zet net zijn voet op de markering. Wat doe je?',
+    o: ['Je verleent voorrang', 'Je rijdt door, je was er eerst', 'Je toetert', 'Je rijdt er traag omheen'],
+    a: 0, heavy: true, fb: 'Wie op het zebrapad stapt of op het punt staat dat te doen, krijgt voorrang.' },
+
+  { l: 'm09', sign: 'F103', q: 'Je rijdt een voetgangerszone binnen met dit bord en een onderbord "uitgezonderd laden en lossen van 6 tot 10 u". Het is 11 uur en je moet leveren. Mag je erin?',
+    o: ['Nee, buiten die uren is de zone gesloten voor je', 'Ja, want je komt leveren', 'Ja, als je stapvoets rijdt', 'Ja, met je waarschuwingsknipperlichten aan'],
+    a: 0, fb: 'De uitzondering geldt alleen binnen de aangeduide uren. Daarbuiten is de zone voor voetgangers.' },
+
+  { l: 'm09', sign: 'F111', q: 'Je rijdt een fietszone binnen met dit bord. Voor je rijdt een fietser aan 18 km/u en achter je vormt zich een rij auto&#8217;s. Mag je inhalen?',
+    o: ['Nee, in een fietszone geldt een absoluut inhaalverbod voor fietsers', 'Ja, als er ruimte genoeg is', 'Ja, als je 1,5 m afstand houdt', 'Ja, als de fietser trager rijdt dan 20 km/u'],
+    a: 0, heavy: true, fb: 'In een fietsstraat of fietszone mag je fietsers nooit inhalen, hoe traag ze ook rijden. Je maximumsnelheid is er bovendien 30 km/u.' },
+
+  { l: 'm09', sign: 'F87', q: 'Dit bord staat voor een drempel in een wijk. Hoe rijd je eroverheen?',
+    o: ['Traag en gelijkmatig, zonder te remmen op de drempel zelf', 'Snel, om de schok kort te houden', 'Met een wiel in de berm', 'Met je waarschuwingsknipperlichten aan'],
+    a: 0, fb: 'Remmen op de drempel zelf laat de wagen duiken en belast de vering onnodig.' },
+
+  { l: 'm09', sign: 'F99a', q: 'Dit bord staat aan het begin van een pad. Wat mag je daaruit afleiden?',
+    o: ['Het pad is voorbehouden aan voetgangers, fietsers en ruiters', 'Het pad is een fietspad', 'Het pad is een wandelweg zonder fietsers', 'Het pad mag door landbouwvoertuigen gebruikt worden'],
+    a: 0, fb: 'Op het bord staat wie er thuishoort. Wat er niet op staat, hoort er niet.' },
+
+  { l: 'm09', sign: 'F18', q: 'Je ziet dit bord boven een strook die met een brede witte lijn van de rest gescheiden is. Wat mag je ermee?',
+    o: ['Je mag ze oversteken of gebruiken om af te slaan, niet om erop te rijden', 'Je mag ze gebruiken als gewone rijstrook', 'Je mag ze nooit aanraken', 'Je mag er parkeren'],
+    a: 0, fb: 'Een bijzondere overrijdbare bedding is voor het openbaar vervoer. Je mag ze kruisen, maar niet als rijstrook gebruiken.' },
+
+  { l: 'm09', sign: 'F4b', q: 'Je passeert dit bord aan de rand van een wijk. Hoe snel mag je daarna?',
+    o: ['Terug de snelheid van de weg waar je komt, vaak 50 binnen de bebouwde kom', 'Zo snel als je wil', '70 km/u', 'Nog steeds 30 tot het volgende kruispunt'],
+    a: 0, fb: 'Het einde van een zone brengt je terug naar de gewone regel van die weg, niet naar een hogere snelheid.' },
+
+  { l: 'm09', sign: 'F12b', q: 'Je verlaat een woonerf via dit bord. Wat verandert er?',
+    o: ['De regels van het woonerf vervallen en de gewone snelheid van de straat geldt weer', 'Je mag vanaf hier 50 rijden, altijd', 'Er verandert niets voor voetgangers', 'Je moet stoppen voor je verder rijdt'],
+    a: 0, fb: 'Met het einde van het woonerf vervalt ook het recht van voetgangers om de hele breedte te gebruiken.' },
+
+  { l: 'm09', sign: 'F50', q: 'Dit bord kondigt een fietsersoversteek aan. Hebben de fietsers daardoor voorrang?',
+    o: ['Nee, het bord kondigt alleen aan; de voorrang volgt uit de gewone regels', 'Ja, altijd', 'Ja, maar alleen overdag', 'Nee, en je hoeft er niet te vertragen'],
+    a: 0, fb: 'Aanwijzingsborden informeren. Of je voorrang moet verlenen, hangt af van de markering en de regels ter plaatse.' }
+
+];
+
+</script>
+<script>
 /* Vragendatabank: bundelt alle vragen en trekt er willekeurig uit */
 (function () {
   var all = [], seq = 0;
@@ -4815,6 +5309,11 @@ window.QEXTRA = [
 
   /* 3. extra vragen */
   (window.QEXTRA || []).forEach(function (q) { add(q, q.l, 'extra'); });
+
+  /* 3b. bordenvragen in situatievorm: niet "wat betekent dit bord" maar
+     wat je in die situatie moet doen */
+  (window.QBORDEN || []).forEach(function (q) { add(q, q.l, 'borden'); });
+  (window.QBORDEN2 || []).forEach(function (q) { add(q, q.l, 'borden'); });
 
   /* 4. automatisch gegenereerde bordenvragen */
   var SERIE = { A: 'm04', B: 'm05', C: 'm06', D: 'm07', E: 'm08', F: 'm09' };
@@ -4876,12 +5375,13 @@ window.QEXTRA = [
   var byLesson = {};
   all.forEach(function (q) { (byLesson[q.l] = byLesson[q.l] || []).push(q); });
 
-  /* een reeks mengt geschreven vragen met automatisch gegenereerde bordenvragen,
-     zodat je niet tien keer na elkaar hetzelfde soort vraag krijgt */
+  /* een reeks bestaat vooral uit geschreven vragen; de automatisch
+     gegenereerde herkenningsvragen zijn er een kleine bijmenging, want
+     "welk bord is dit" leert je niet wat je op de weg moet doen */
   function mix(pool, n, autoShare) {
     var written = shuffled(pool.filter(function (q) { return q.src !== 'auto'; }));
     var auto = shuffled(pool.filter(function (q) { return q.src === 'auto'; }));
-    var maxAuto = Math.round(n * (autoShare == null ? 0.4 : autoShare));
+    var maxAuto = Math.floor(n * (autoShare == null ? 0.4 : autoShare));
     var out = written.slice(0, n - Math.min(maxAuto, auto.length));
     out = out.concat(auto.slice(0, n - out.length));
     if (out.length < n) out = out.concat(written.slice(out.length, n));
@@ -4891,12 +5391,12 @@ window.QEXTRA = [
   function draw(lesson, n) {
     var pool = (byLesson[lesson] || []).slice();
     if (pool.length < n) pool = pool.concat(shuffled(byLesson.mix || []).slice(0, n - pool.length));
-    return mix(pool, Math.min(n, pool.length), 0.4);
+    return mix(pool, Math.min(n, pool.length), 0.15);
   }
 
   function exam(n) {
     n = n || 50;
-    var heavyWanted = 10, autoWanted = 10;
+    var heavyWanted = 10, autoWanted = 5;
     var seen = {}, out = [];
     function take(list, limit) {
       for (var i = 0; i < list.length && limit > 0; i++) {
